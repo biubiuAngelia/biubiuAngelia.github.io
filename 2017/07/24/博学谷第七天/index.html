@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博学谷第七天 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ajax全局事件.ajaxStart按批次触发，只执行一次 .ajaxSend.ajaxSuccess.ajaxComplete.ajaxStop按批次触发，只执行一次 .ajaxError表单验证插件（jQuery Validate）调用 jQuery(“form”).validate();必填123&amp;lt;form&amp;gt;    &amp;lt;input type=&quot;text&quot; data-requi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博学谷第七天">
+<meta property="og:url" content="http://yoursite.com/2017/07/24/博学谷第七天/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="ajax全局事件.ajaxStart按批次触发，只执行一次 .ajaxSend.ajaxSuccess.ajaxComplete.ajaxStop按批次触发，只执行一次 .ajaxError表单验证插件（jQuery Validate）调用 jQuery(“form”).validate();必填123&amp;lt;form&amp;gt;    &amp;lt;input type=&quot;text&quot; data-requi">
+<meta property="og:updated_time" content="2017-07-24T07:21:06.895Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博学谷第七天">
+<meta name="twitter:description" content="ajax全局事件.ajaxStart按批次触发，只执行一次 .ajaxSend.ajaxSuccess.ajaxComplete.ajaxStop按批次触发，只执行一次 .ajaxError表单验证插件（jQuery Validate）调用 jQuery(“form”).validate();必填123&amp;lt;form&amp;gt;    &amp;lt;input type=&quot;text&quot; data-requi">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-博学谷第七天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/24/博学谷第七天/" class="article-date">
+  <time datetime="2017-07-24T02:27:59.000Z" itemprop="datePublished">2017-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      博学谷第七天
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ajax全局事件"><a href="#ajax全局事件" class="headerlink" title="ajax全局事件"></a>ajax全局事件</h1><h2 id="ajaxStart"><a href="#ajaxStart" class="headerlink" title=".ajaxStart"></a>.ajaxStart</h2><p>按批次触发，只执行一次</p>
+<h2 id="ajaxSend"><a href="#ajaxSend" class="headerlink" title=".ajaxSend"></a>.ajaxSend</h2><h2 id="ajaxSuccess"><a href="#ajaxSuccess" class="headerlink" title=".ajaxSuccess"></a>.ajaxSuccess</h2><h2 id="ajaxComplete"><a href="#ajaxComplete" class="headerlink" title=".ajaxComplete"></a>.ajaxComplete</h2><h2 id="ajaxStop"><a href="#ajaxStop" class="headerlink" title=".ajaxStop"></a>.ajaxStop</h2><p>按批次触发，只执行一次</p>
+<h2 id="ajaxError"><a href="#ajaxError" class="headerlink" title=".ajaxError"></a>.ajaxError</h2><h1 id="表单验证插件（jQuery-Validate）"><a href="#表单验证插件（jQuery-Validate）" class="headerlink" title="表单验证插件（jQuery Validate）"></a>表单验证插件（jQuery Validate）</h1><p>调用 jQuery(“form”).validate();<br>必填<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">data-required</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>需要指定表单验证的规则，就得给表单元素添加对应的data-属性</p>
+<ol>
+<li>data-required:设置当前表单项为必填项</li>
+<li>data-trim:验证的时候是否要去掉两边的空格（注意：提交数据的时候，空格不会被去掉）</li>
+<li>data-pattern:指定正则表达式来测试表单的值是否能够通过验证(不用加两边的”/“)</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">data-required</span>  <span class="attr">data-pattern</span>=<span class="string">^\d&#123;11&#125;$</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//要使</span></div><div class="line">$(<span class="string">"form"</span>).validate(&#123;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ol>
+<li><p>data-conditional:指定条件验证的条件函数的名称，条件其实就是function<br>在表单验证的hi后，会自动调用这个函数，函—–缺省—–<br>条件验证找函数是去validate方法参数对象中找conditional对象<br>在conditional对象中找名字相同的function</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form).validate(&#123;</span></div><div class="line"><span class="string">    condition:&#123;</span></div><div class="line"><span class="string">        isShuaige:function(value)&#123;</span></div><div class="line"><span class="string">            return value="</span><span class="string">"</span></div><div class="line"><span class="string">        &#125;,</span></div><div class="line"><span class="string">        isAult:function()&#123;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">        &#125;</span></div><div class="line"><span class="string">    &#125;</span></div><div class="line"><span class="string">&#125;)</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>data-description</p>
+</li>
+<li><p>data-describedby</p>
+</li>
+</ol>
+<h2 id="可以给validate方法传递的参数"><a href="#可以给validate方法传递的参数" class="headerlink" title="可以给validate方法传递的参数"></a>可以给validate方法传递的参数</h2><ol>
+<li>conditional:它是一个对象，条件验证的所有的函数都会存放在这个函数中</li>
+<li>description:是一个对象，存储的是一组组（对象）描述信息</li>
+<li>onBlur:布尔值，设置是否在表单元素失去焦点的时候校验，默认false</li>
+<li>onChange:布尔值，设置是否在表单内容改编的时候进行校验,默认false（触发了验证，但不改变提示信息）注意：只有在失去焦点的时候校验</li>
+<li>onKeyup:布尔值，设置是否在按键弹起的时候进行校验，默认false（触发了验证，但不改变提示信息）</li>
+<li>onSubmit:布尔值，设置是否在表单提交的时候校验，默认true</li>
+<li>sendForm:布尔值，设置是否在验证成功之后提交表单，默认true</li>
+</ol>
+<h2 id="回调函数事件"><a href="#回调函数事件" class="headerlink" title="回调函数事件"></a>回调函数事件</h2><ol>
+<li>valid:当表单整体通过验证的时候，会调用该方法</li>
+<li>invalid:当表单整体不通过验证的时候，会调用该方法</li>
+<li>eachField:每当有一个字段被校验的时候，就会调用该方法（不管校验通过不通过）</li>
+<li>eachValidField:每当有一个字段被检验且通过验证的时候，调用该方法</li>
+<li>eachInvalidField:每当有一个字段被校验且校验不通过的时候，调用该方法<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form"</span>).validate(&#123;</div><div class="line">    valid:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    invalid:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    eachField:<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.ele);</div><div class="line">    &#125;,</div><div class="line">    eachValidField:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">    &#125;,</div><div class="line">    eachInvalidField:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/24/博学谷第七天/" data-id="cj6f1jbr50000hsog0ounn8fu" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/25/博学谷部分知识总结/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          博学谷部分知识总结
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/23/博学谷第六天/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">博学谷第六天</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/26/博学谷第八天/">博学谷第八天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/25/博学谷部分知识总结/">博学谷部分知识总结</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/24/博学谷第七天/">博学谷第七天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/23/博学谷第六天/">博学谷第六天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/22/面向对象复习/">面向对象复习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

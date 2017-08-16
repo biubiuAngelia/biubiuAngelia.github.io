@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-博学谷第八天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/26/博学谷第八天/" class="article-date">
+  <time datetime="2017-07-26T01:46:01.000Z" itemprop="datePublished">2017-07-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/26/博学谷第八天/">博学谷第八天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="文件上传插件"><a href="#文件上传插件" class="headerlink" title="文件上传插件"></a>文件上传插件</h1><h2 id="upFile"><a href="#upFile" class="headerlink" title="upFile"></a>upFile</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#upFile"</span>).uploadify(&#123;</div><div class="line">    <span class="comment">//swf文件的路径</span></div><div class="line">    swf:<span class="string">""</span>,</div><div class="line">    <span class="comment">//上传文件的后台接口地址</span></div><div class="line">    uploader:<span class="string">"alkfdjalksj.php"</span>,</div><div class="line">    <span class="comment">//上传图片的时候，图片对应的键</span></div><div class="line">    fileObjName:<span class="string">"接口文档决定的"</span>,</div><div class="line">    <span class="comment">//</span></div><div class="line">    buttonClass:<span class="string">"red"</span>,</div><div class="line">    buttonText:<span class="string">"请选择图片"</span>,</div><div class="line">    fileTypeExts:<span class="string">"*gif;*jpg;*png"</span>,</div><div class="line">    fileTypeDesc:<span class="string">"Image Files"</span>,</div><div class="line">    <span class="comment">//给后台上传照片的时候附带一些表单数据</span></div><div class="line">    formData:&#123;<span class="attr">name</span>:<span class="string">""</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;,</div><div class="line">    <span class="comment">//通过itemTemplate可以将上传的进度显示出来</span></div><div class="line">    itemTmplate:<span class="string">"&lt;p&gt;&lt;/p&gt;"</span>,</div><div class="line">    <span class="comment">//是否可以选择多个文件一起上传，默认true</span></div><div class="line">    multi:ture,</div><div class="line">    <span class="comment">//上传时间的限制</span></div><div class="line">    successout:<span class="number">60</span>s</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#upFile"</span>).uploadify(&#123;</div><div class="line">    <span class="comment">//上传成功后的回调</span></div><div class="line">    onUploadSuccess:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/26/博学谷第八天/" data-id="cj6f1jbrl0003hsogxms6ir9s" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷部分知识总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/25/博学谷部分知识总结/" class="article-date">
+  <time datetime="2017-07-25T03:03:56.000Z" itemprop="datePublished">2017-07-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/25/博学谷部分知识总结/">博学谷部分知识总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="通过"><a href="#通过" class="headerlink" title="通过"></a>通过</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/25/博学谷部分知识总结/" data-id="cj6f1jbry0006hsog38vqzgxx" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第七天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/24/博学谷第七天/" class="article-date">
+  <time datetime="2017-07-24T02:27:59.000Z" itemprop="datePublished">2017-07-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/24/博学谷第七天/">博学谷第七天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="ajax全局事件"><a href="#ajax全局事件" class="headerlink" title="ajax全局事件"></a>ajax全局事件</h1><h2 id="ajaxStart"><a href="#ajaxStart" class="headerlink" title=".ajaxStart"></a>.ajaxStart</h2><p>按批次触发，只执行一次</p>
+<h2 id="ajaxSend"><a href="#ajaxSend" class="headerlink" title=".ajaxSend"></a>.ajaxSend</h2><h2 id="ajaxSuccess"><a href="#ajaxSuccess" class="headerlink" title=".ajaxSuccess"></a>.ajaxSuccess</h2><h2 id="ajaxComplete"><a href="#ajaxComplete" class="headerlink" title=".ajaxComplete"></a>.ajaxComplete</h2><h2 id="ajaxStop"><a href="#ajaxStop" class="headerlink" title=".ajaxStop"></a>.ajaxStop</h2><p>按批次触发，只执行一次</p>
+<h2 id="ajaxError"><a href="#ajaxError" class="headerlink" title=".ajaxError"></a>.ajaxError</h2><h1 id="表单验证插件（jQuery-Validate）"><a href="#表单验证插件（jQuery-Validate）" class="headerlink" title="表单验证插件（jQuery Validate）"></a>表单验证插件（jQuery Validate）</h1><p>调用 jQuery(“form”).validate();<br>必填<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">data-required</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>需要指定表单验证的规则，就得给表单元素添加对应的data-属性</p>
+<ol>
+<li>data-required:设置当前表单项为必填项</li>
+<li>data-trim:验证的时候是否要去掉两边的空格（注意：提交数据的时候，空格不会被去掉）</li>
+<li>data-pattern:指定正则表达式来测试表单的值是否能够通过验证(不用加两边的”/“)</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">data-required</span>  <span class="attr">data-pattern</span>=<span class="string">^\d&#123;11&#125;$</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment">//要使</span></div><div class="line">$(<span class="string">"form"</span>).validate(&#123;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ol>
+<li><p>data-conditional:指定条件验证的条件函数的名称，条件其实就是function<br>在表单验证的hi后，会自动调用这个函数，函—–缺省—–<br>条件验证找函数是去validate方法参数对象中找conditional对象<br>在conditional对象中找名字相同的function</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form).validate(&#123;</span></div><div class="line"><span class="string">    condition:&#123;</span></div><div class="line"><span class="string">        isShuaige:function(value)&#123;</span></div><div class="line"><span class="string">            return value="</span><span class="string">"</span></div><div class="line"><span class="string">        &#125;,</span></div><div class="line"><span class="string">        isAult:function()&#123;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">        &#125;</span></div><div class="line"><span class="string">    &#125;</span></div><div class="line"><span class="string">&#125;)</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>data-description</p>
+</li>
+<li><p>data-describedby</p>
+</li>
+</ol>
+<h2 id="可以给validate方法传递的参数"><a href="#可以给validate方法传递的参数" class="headerlink" title="可以给validate方法传递的参数"></a>可以给validate方法传递的参数</h2><ol>
+<li>conditional:它是一个对象，条件验证的所有的函数都会存放在这个函数中</li>
+<li>description:是一个对象，存储的是一组组（对象）描述信息</li>
+<li>onBlur:布尔值，设置是否在表单元素失去焦点的时候校验，默认false</li>
+<li>onChange:布尔值，设置是否在表单内容改编的时候进行校验,默认false（触发了验证，但不改变提示信息）注意：只有在失去焦点的时候校验</li>
+<li>onKeyup:布尔值，设置是否在按键弹起的时候进行校验，默认false（触发了验证，但不改变提示信息）</li>
+<li>onSubmit:布尔值，设置是否在表单提交的时候校验，默认true</li>
+<li>sendForm:布尔值，设置是否在验证成功之后提交表单，默认true</li>
+</ol>
+<h2 id="回调函数事件"><a href="#回调函数事件" class="headerlink" title="回调函数事件"></a>回调函数事件</h2><ol>
+<li>valid:当表单整体通过验证的时候，会调用该方法</li>
+<li>invalid:当表单整体不通过验证的时候，会调用该方法</li>
+<li>eachField:每当有一个字段被校验的时候，就会调用该方法（不管校验通过不通过）</li>
+<li>eachValidField:每当有一个字段被检验且通过验证的时候，调用该方法</li>
+<li>eachInvalidField:每当有一个字段被校验且校验不通过的时候，调用该方法<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form"</span>).validate(&#123;</div><div class="line">    valid:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    invalid:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;,</div><div class="line">    eachField:<span class="function"><span class="keyword">function</span>(<span class="params">ele</span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.ele);</div><div class="line">    &#125;,</div><div class="line">    eachValidField:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>);</div><div class="line">    &#125;,</div><div class="line">    eachInvalidField:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/24/博学谷第七天/" data-id="cj6f1jbr50000hsog0ounn8fu" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第六天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/23/博学谷第六天/" class="article-date">
+  <time datetime="2017-07-23T01:12:48.000Z" itemprop="datePublished">2017-07-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/23/博学谷第六天/">博学谷第六天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h1><h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><h3 id="模块化的意义"><a href="#模块化的意义" class="headerlink" title="模块化的意义"></a>模块化的意义</h3><p>模块化有利于更好的管理和维护代码<br>模块化也可以非常方便的解决复用的问题<br>模块化可以非常方便的解决模块之间的依赖关系</p>
+<h3 id="模块化标准"><a href="#模块化标准" class="headerlink" title="模块化标准"></a>模块化标准</h3><ol>
+<li>CommonJS</li>
+<li>AMD 异步模块定义，依赖前置 require.js</li>
+<li>CMD 通用模块定义，依赖就近 sea.js</li>
+</ol>
+<h2 id="require-js"><a href="#require-js" class="headerlink" title="require.js"></a>require.js</h2><h3 id="定义模块"><a href="#定义模块" class="headerlink" title="定义模块"></a>定义模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//模块名称和依赖项都是可选参数</span></div><div class="line"><span class="comment">//函数是必须的</span></div><div class="line">define(<span class="string">"模块名字"</span>,[<span class="string">"依赖项"</span>&#125;,<span class="function"><span class="keyword">function</span>(<span class="params">依赖项的返回值</span>)</span>&#123;</div><div class="line">    <span class="comment">//通过return 语句，返回当前模块输出内容</span></div><div class="line">])</div></pre></td></tr></table></figure>
+<h3 id="引用模块"><a href="#引用模块" class="headerlink" title="引用模块"></a>引用模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//baseUrl+paths</span></div><div class="line"><span class="comment">//如果已经配置了baseUrl,但是还是写了 / .js  http  ,那么naseUrl在这个模块的引用中就不生效，也就是当前这个模块的查找就不遵守 baseUrl+paths 的方式了，而是直接按照正常的文件路径来查找</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"模块路径/别名"</span>],<span class="function"><span class="keyword">function</span>(<span class="params">模块的返回值</span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h3 id="require-config方法的使用"><a href="#require-config方法的使用" class="headerlink" title="require.config方法的使用"></a>require.config方法的使用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl:<span class="string">""</span>,<span class="comment">//设置查找模块的时候的基础路径</span></div><div class="line">    paths:&#123;</div><div class="line">        <span class="comment">//设置模块的别名</span></div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>###模块查找的路径<br>一般情况下，以用一个模块的时候，模块名后面的.js可以直接省略</p>
+<ol>
+<li>没有data-main也没有baseUrl 直接以当前文档作为基础，查找模块</li>
+<li>设置了data-main,其实就意味着将baseUrl 设置成了data-main所指的文件所在的路径————————<br>—- 缺省 —-</li>
+<li>———— 缺省 —————<h3 id="引用第三方内容"><a href="#引用第三方内容" class="headerlink" title="引用第三方内容"></a>引用第三方内容</h3></li>
+<li>支持模块化<br>直接像使用自己定义的模块一样去使用即可</li>
+<li>不支持模块化<br>判断：<ul>
+<li>这个东西需要什么依赖项</li>
+<li>这个东西有没有返回值（会不会提供内容使用）<br>如果需要依赖项：需要在require.config方法中<br>shim:{<br>  “模块名称”:{<pre><code>deps:[&quot;依赖项&quot;]
+</code></pre>  }<br>}<br>如果需要返回内容：需要再require.config方法中<br>shim:{<br>  “模块名称”:{<pre><code>ecports:&quot;第三方内容中需要返回的内容的名字&quot;
+//require.js 回去第三方内容中寻找和这个名字同名的全局变量
+//将其值作为这个第三方内容的返回值
+</code></pre>  }<br>}</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="模板引擎过滤器模"><a href="#模板引擎过滤器模" class="headerlink" title="模板引擎过滤器模"></a>模板引擎过滤器模</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<p>过滤器的本质：<br>其实就是一个函数</p>
+<hr>
+<h2 id="退出登录"><a href="#退出登录" class="headerlink" title="退出登录"></a>退出登录</h2><ol>
+<li>注册点击事件</li>
+<li>发送异步请求 退出登录</li>
+<li>跳转到登录页面</li>
+</ol>
+<h2 id="导航栏交互"><a href="#导航栏交互" class="headerlink" title="导航栏交互"></a>导航栏交互</h2><p>需求：</p>
+<pre><code>1. 点击1级菜单显示2级菜单
+2. 和当前页面对应的菜单项应该有active类样式
+</code></pre><p>注意： 需要通过获取url中的pathname， 再根据pathname找到对应的菜单项！</p>
+<h2 id="讲师列表"><a href="#讲师列表" class="headerlink" title="讲师列表"></a>讲师列表</h2><ol>
+<li>发送ajax请求，获取讲师列表数据</li>
+<li>使用模板引擎渲染</li>
+</ol>
+<h2 id="查看讲师"><a href="#查看讲师" class="headerlink" title="查看讲师"></a>查看讲师</h2><ol>
+<li>注意要将讲师的id保存在按钮的父元素上</li>
+<li>点击查看按钮的时候，先获取id</li>
+<li>向后台发送ajax请求，获取当前讲师的信息</li>
+<li>渲染</li>
+<li>显示模态框！</li>
+</ol>
+<h2 id="启用注销讲师"><a href="#启用注销讲师" class="headerlink" title="启用注销讲师"></a>启用注销讲师</h2><p>点击按钮的时候发送ajax请求</p>
+<p>注意： 根据后台返回回来的讲师更改后的状态，修改按钮的样式，文字，以及自定义属性data-status</p>
+<h2 id="添加讲师"><a href="#添加讲师" class="headerlink" title="添加讲师"></a>添加讲师</h2><h2 id="编辑讲师"><a href="#编辑讲师" class="headerlink" title="编辑讲师"></a>编辑讲师</h2><p>注意： 首先确定两个功能使用同一个页面，所以要提取模板！</p>
+<p>模板中不同的内容，要通过数据渲染<br>标题<br>按钮文字<br>表单提交的地址<br>表单内容</p>
+<h2 id="日期插件"><a href="#日期插件" class="headerlink" title="日期插件"></a>日期插件</h2><p>引入 css, js  语言包js</p>
+<pre><code class="js">$(<span class="string">"input标签"</span>).datepicker({
+    format: <span class="string">"yyyy-mm-dd"</span>,
+    language: <span class="string">"zh-CN"</span>
+});
+</code></pre>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/23/博学谷第六天/" data-id="cj6f1jbrv0005hsoghsm26j75" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-面向对象复习" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/22/面向对象复习/" class="article-date">
+  <time datetime="2017-07-22T03:41:24.000Z" itemprop="datePublished">2017-07-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/22/面向对象复习/">面向对象复习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面向对象三大特征"><a href="#面向对象三大特征" class="headerlink" title="面向对象三大特征"></a>面向对象三大特征</h1><h2 id="封装"><a href="#封装" class="headerlink" title="封装"></a>封装</h2><p>对象就是对属性和方法的封装，要实现一个功能，对外值暴露一些接口，调用者只需要通过接口调用功能即可，不需要关注接口内部实现原理：<br>    Math.abs();<br>   <strong> 方法和函数：对象内部的函数叫做方法 </strong></p>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>子承父业<br>一个对象有很多属性和方法，另一个对象也想有这些属性和方法<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> jianlin=&#123;</div><div class="line">    name:<span class="string">"建林"</span>,</div><div class="line">    money:<span class="number">10000000000</span>,</div><div class="line">    say:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"先赚他一个亿"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> sicong=&#123;&#125;;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> jianlin)&#123;</div><div class="line">    sicong[k]=jianlin[k];</div><div class="line">&#125;</div><div class="line">sicong.name=<span class="string">"思聪"</span>;</div><div class="line"><span class="built_in">console</span>.log(sicong.money);</div></pre></td></tr></table></figure></p>
+<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2><p>同一个类型的变量可以表现出不同的形态<br>用父类的变量指向子类的对象<br><strong> js中没有多态 </strong></p>
+<h3 id="面向对象的封装举例"><a href="#面向对象的封装举例" class="headerlink" title="面向对象的封装举例"></a>面向对象的封装举例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> itcast=&#123;</div><div class="line">    tagNma:<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="built_in">document</span>.getElementByTagName(name);</div><div class="line">    &#125;,</div><div class="line">    setBorder:<span class="function"><span class="keyword">function</span>(<span class="params">list</span>)</span>&#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;list.length;i++)&#123;</div><div class="line">            <span class="keyword">var</span> obj=list[i];</div><div class="line">            obj.style.border=<span class="string">"1px solid red"</span>;</div><div class="line">        &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">itcast.setBorder(tagName(<span class="string">'div'</span>));</div></pre></td></tr></table></figure>
+<p>根据功能可以进一步优化<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> itcast=&#123;</div><div class="line">    setName:&#123;</div><div class="line">         tagNma:<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">            <span class="keyword">return</span> <span class="built_in">document</span>.getElementByTagName(name);</div><div class="line">        &#125;,</div><div class="line">        id:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    setStyle:&#123;</div><div class="line">        setBorder:<span class="function"><span class="keyword">function</span>(<span class="params">list</span>)</span>&#123;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;list.length;i++)&#123;</div><div class="line">                <span class="keyword">var</span> obj=list[i];</div><div class="line">                obj.style.border=<span class="string">"1px solid red"</span>;</div><div class="line">            &#125;)</div><div class="line">        &#125;,</div><div class="line">        setBg:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="创建对象的方式"><a href="#创建对象的方式" class="headerlink" title="创建对象的方式"></a>创建对象的方式</h1><h2 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h2><p>复用率太低<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> stu=&#123;</div><div class="line">    name:<span class="string">"我嵩"</span>,</div><div class="line">    age:<span class="string">"18"</span>,</div><div class="line">    score:<span class="number">100</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="Object构造函数"><a href="#Object构造函数" class="headerlink" title="Object构造函数"></a>Object构造函数</h2><p>代码复用率太低<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> stu1=<span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">stu1.name=<span class="string">"嵩嵩"</span>;</div><div class="line">stu1.age=<span class="number">18</span>;</div></pre></td></tr></table></figure></p>
+<h2 id="自定义构造函数"><a href="#自定义构造函数" class="headerlink" title="自定义构造函数"></a>自定义构造函数</h2><p>提高代码复用性，可以快速创建多个对象<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stu</span>(<span class="params">name,age</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=name;</div><div class="line">    <span class="keyword">this</span>.age=age;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> stu1=<span class="keyword">new</span> Stu(<span class="string">"嵩嵩"</span>,<span class="number">18</span>);</div></pre></td></tr></table></figure></p>
+<h3 id="构造函数的语法"><a href="#构造函数的语法" class="headerlink" title="构造函数的语法"></a>构造函数的语法</h3><ol>
+<li>构造函数的函数名首字母大写，帕斯卡命令</li>
+<li>构造函数一般和new关键字一起使用</li>
+<li>构造函数不需要设置return 语句，默认返回的是新创建的对象</li>
+<li>this指向的是新创建的对象</li>
+</ol>
+<h3 id="构造函数的执行过程"><a href="#构造函数的执行过程" class="headerlink" title="构造函数的执行过程"></a>构造函数的执行过程</h3><ol>
+<li>new关键字，会创建一个心的对象，会在内存中开辟一个新空间</li>
+<li>让构造函数中this指向新创建的对象</li>
+<li>执行构造函数，给新创建的对象进行初始化，赋值</li>
+<li>构造函数初始化完成后，会将新创建的对象返回</li>
+</ol>
+<h3 id="构造函数注意点"><a href="#构造函数注意点" class="headerlink" title="构造函数注意点"></a>构造函数注意点</h3><p><strong> 构造函数本身也是函数 </strong></p>
+<ol>
+<li>构造函数有返回值<br>如果return 返回的值是值类型的数据，则对构造函数没有影响<br>如果return 返回的值，是引用类型的数据，会用 <strong>引用类型的数据</strong> 替换 <strong>新创建对象</strong></li>
+<li>构造函数当作普通函数执行会怎样</li>
+</ol>
+<h3 id="构造函数的问题"><a href="#构造函数的问题" class="headerlink" title="构造函数的问题"></a>构造函数的问题</h3><ul>
+<li>构造函数每执行一次，都会为对象开辟一个新的空间，在对象中，所有对象的方法代码都是一样的，没有必要开辟新空间，造成内存浪费<br><strong>构造函数—-&gt;原型</strong></li>
+</ul>
+<h1 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h1><ul>
+<li>每个构造函数在创建出来的时候，系统会自动给这个构造函数创建并关联一个空的对象，这个空对象就叫做原型</li>
+<li>在原型中定义的属性和方法，会被这个构造函数创建出来的对象所共享<br><strong> 访问原型的方式：构造函数名.prototype </strong><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">"xs"</span>;</div><div class="line">    <span class="keyword">this</span>.age=<span class="number">18</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//给构造函数的原型添加方法</span></div><div class="line">Person.prototype.say=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"大家好，我是VAE"</span>);</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> p1=<span class="keyword">new</span> Person();</div><div class="line"><span class="keyword">var</span> p2=<span class="keyword">new</span> Person();</div><div class="line">p1.say();</div><div class="line">p2.say();</div><div class="line"><span class="comment">//实例化 创建对象且赋值的过程</span></div><div class="line"><span class="comment">//实例 对象</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="原型的使用方式"><a href="#原型的使用方式" class="headerlink" title="原型的使用方式"></a>原型的使用方式</h2><p>举例：原型添加方法给<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dog</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">"miaomiao"</span>;</div><div class="line">    &#125;</div><div class="line"><span class="comment">//1. 利用对象的动态特性为原型添加成员</span></div><div class="line">Dog.prototype.say=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"汪汪汪"</span>);</div><div class="line">&#125;</div><div class="line">Dog.prototype.age=<span class="number">18</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> d1=<span class="keyword">new</span> Dog();</div><div class="line"><span class="built_in">console</span>.log(d1);</div><div class="line"></div><div class="line">d1.say();</div><div class="line"></div><div class="line"><span class="comment">//2. 替换原型对象</span></div><div class="line"><span class="keyword">var</span> obj=&#123;</div><div class="line">    say:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">"汪汪汪"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">Dog.prototype=obj;</div><div class="line"><span class="keyword">var</span> d2=<span class="keyword">new</span> Dog();</div></pre></td></tr></table></figure></p>
+<h2 id="原型的注意点"><a href="#原型的注意点" class="headerlink" title="原型的注意点"></a>原型的注意点</h2><ol>
+<li>使用【对象.属性名】去获取对象的属性时，会先在自身中进行查找，如果没有，就去原型中查找</li>
+<li>使用【对象.属性名】去设置对象属性的时候，只会在自身进行查找，如果有，就去修改，如果没有，就添加</li>
+<li>一般情况下，不会将属性放在原型当中，只会将方法放在原型中</li>
+<li>在替换原型的时候，替换之前创建的对象，和替换之后创建的对象的原型不一致！</li>
+<li>对象关联的原型，就是创建对象那一刻，构造函数的prototype属性</li>
+</ol>
+<h2 id="实例对象proto属性"><a href="#实例对象proto属性" class="headerlink" title="实例对象proto属性"></a>实例对象<strong>proto</strong>属性</h2><p>_属性名  js私有属性，不能对外开放<br>__属性名  非标准属性</p>
+<p><strong>proto</strong>  是一个非标准的属性，最早有firefox 提出来</p>
+<h3 id="访问原型对象"><a href="#访问原型对象" class="headerlink" title="访问原型对象"></a>访问原型对象</h3><p><strong> 构造函数名.prototypr </strong><br>不建议通过实例对象操作元素</p>
+<ol>
+<li>由于兼容性问题，不推荐使用</li>
+<li>由于稳定性问题，不推荐使用</li>
+<li>只用于调试<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Person()&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">"xs"</span>; </div><div class="line">&#125;</div><div class="line">Person.prototype.age=<span class="number">18</span>;</div><div class="line"><span class="built_in">console</span>.log(Person.prototype);</div><div class="line"><span class="keyword">var</span> p1=<span class="keyword">new</span> Person();</div><div class="line"><span class="built_in">console</span>.log(d1.__proto__);</div><div class="line"><span class="built_in">console</span>.log(di.__proto__==Dog.prototype);</div><div class="line"></div><div class="line">d1.__proto__.age=<span class="number">17</span>;</div><div class="line"><span class="built_in">console</span>.log(d1.__proto__);</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="原型的-constructor属性"><a href="#原型的-constructor属性" class="headerlink" title="原型的.constructor属性"></a>原型的.constructor属性</h2><p>原型的constructor属性，指向了和原型关联的构造函数<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">"xs"</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> p=<span class="keyword">new</span> Person();</div><div class="line"></div><div class="line"><span class="comment">//取原型</span></div><div class="line"><span class="built_in">console</span>.log(Person.prototype.constructor); <span class="comment">//打印出的是函数体</span></div><div class="line"><span class="built_in">console</span>.log(p.__proto__.constructor); <span class="comment">//打印出的是函数体</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> date=<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line"><span class="built_in">console</span>.log(typeOf date);  <span class="comment">//object</span></div><div class="line"><span class="comment">//获取引用类型的数据类型</span></div><div class="line"><span class="built_in">console</span>.log(date.__proto__.constructor.name);  <span class="comment">//Date</span></div></pre></td></tr></table></figure></p>
+<h1 id="原型继承"><a href="#原型继承" class="headerlink" title="原型继承"></a>原型继承</h1><h2 id="混入式原型继承"><a href="#混入式原型继承" class="headerlink" title="混入式原型继承"></a>混入式原型继承</h2><p>混入式继承,原型不会变<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//此方法只能一个对象继承自另一个对象，代码复用性太低了</span></div><div class="line"><span class="keyword">var</span> obj=&#123;</div><div class="line">    name:<span class="string">'xs'</span>;</div><div class="line">    age:<span class="number">18</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> obj1=&#123;&#125;;</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</div><div class="line">    obj1[k]=obj[k];</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.sex=<span class="string">"male"</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//混入式继承,原型不会变</span></div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> k <span class="keyword">in</span> obj)&#123;</div><div class="line">    Person.prototype[k]=obj[k];</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> p1=<span class="keyword">new</span> Person();</div><div class="line"><span class="keyword">var</span> p2=<span class="keyword">new</span> Person();</div><div class="line"><span class="built_in">console</span>.log(p1.name);</div><div class="line"><span class="built_in">console</span>.log(p2.age);</div></pre></td></tr></table></figure></p>
+<h2 id="替换原型继承"><a href="#替换原型继承" class="headerlink" title="替换原型继承"></a>替换原型继承</h2><p>替换原型的方式，会导致原型的constructor属性的丢失<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> obj=&#123;</div><div class="line">    name:<span class="string">'xs'</span>;</div><div class="line">    age:<span class="number">18</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.sex=<span class="string">"male"</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//可以手动指定constructor，以免丢失</span></div><div class="line">obj.prototype=Person;</div><div class="line">Person.prototype=obj;</div><div class="line"></div><div class="line"><span class="keyword">var</span> p1=<span class="keyword">new</span> Person();</div><div class="line"><span class="keyword">var</span> p2=<span class="keyword">new</span> Person();</div><div class="line"><span class="built_in">console</span>.log(p1.name);</div><div class="line"><span class="built_in">console</span>.log(p2.age);</div></pre></td></tr></table></figure></p>
+<h3 id="继承案例"><a href="#继承案例" class="headerlink" title="继承案例"></a>继承案例</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">   <span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>)</span>&#123;</div><div class="line">             <span class="keyword">this</span>.weight=<span class="number">500</span>;</div><div class="line">             <span class="keyword">this</span>.eat=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">                 <span class="built_in">console</span>.log(<span class="string">'又要找牙签了'</span>);</div><div class="line">             &#125;</div><div class="line">         &#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> ani=<span class="keyword">new</span> Animal();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name=<span class="string">'zs'</span>;</div><div class="line">    <span class="keyword">this</span>.tool=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'找西瓜'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//让人类继承自动物类</span></div><div class="line">Person.prototype=ani;</div><div class="line"></div><div class="line"><span class="keyword">var</span> p=<span class="keyword">new</span> Person();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stu</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">this</span>.class=<span class="string">"09"</span>;</div><div class="line">        <span class="keyword">this</span>.score=<span class="number">100</span>;</div><div class="line">    <span class="keyword">this</span>.qiaoCode=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'啪啪啪'</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">Stu.prototype=p;</div><div class="line"></div><div class="line"><span class="keyword">var</span> stu1=<span class="keyword">new</span> Stu();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(stu1);</div><div class="line"><span class="built_in">console</span>.log(stu1.weight);</div><div class="line"></div><div class="line">stu1.eat();</div><div class="line">stu1.tool();</div></pre></td></tr></table></figure>
+<h1 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>对象有原型，原型本身也是一个对象，因而原型也有原型，这样就会形成一个链式结构，称为原型链</p>
+<h2 id="属性的搜索原则"><a href="#属性的搜索原则" class="headerlink" title="属性的搜索原则"></a>属性的搜索原则</h2><p>当通过对象名.属性名获取属性是 ，会遵循以下属性搜索的原则：<br>1-首先去对象自身属性中找，如果找到直接使用，<br>2-如果没找到去自己的原型中找，如果找到直接使用，<br>3-如果没找到，去原型的原型中继续找，找到直接使用，<br>4-如果没有会沿着原型不断向上查找，直到找到null为止</p>
+<h2 id="扩展内置对象"><a href="#扩展内置对象" class="headerlink" title="扩展内置对象"></a>扩展内置对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div></pre></td><td class="code"><pre><div class="line">   <span class="comment">// 扩展内置对象</span></div><div class="line">    <span class="comment">//给内置对象添加新的功能</span></div><div class="line"><span class="built_in">Array</span>.prototype.say=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'你好'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="built_in">Array</span>.prototype.say=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'我也扩展了say'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">var</span> arr=<span class="keyword">new</span> <span class="built_in">Array</span>();</div><div class="line"><span class="keyword">var</span> arr2=<span class="keyword">new</span> <span class="built_in">Array</span>();</div><div class="line"></div><div class="line">arr.splice();</div><div class="line"></div><div class="line">arr.say();</div><div class="line">arr2.say(); </div><div class="line"></div><div class="line"><span class="keyword">var</span> arr=<span class="keyword">new</span> <span class="built_in">Array</span>();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyArray</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">MyArray.prototype=arr; <span class="comment">//我自己的构造函数执行arr</span></div><div class="line"></div><div class="line">MyArray.prototype.say=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'这是我自己的say方法'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> arr1=<span class="keyword">new</span> MyArray();</div><div class="line">arr1.push(<span class="number">1</span>);</div><div class="line">arr1.say();</div><div class="line"></div><div class="line"><span class="string">``</span><span class="string">`   </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">## instanceOf</span></div><div class="line"><span class="string">判断一个对象是否是指定的类型(不够准确)</span></div><div class="line"><span class="string">判断一个构造函数的原型是不是在该对象的原型链上</span></div><div class="line"><span class="string">`</span><span class="string">``</span>javascript</div><div class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">this</span>.name=<span class="string">'zs'</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//p--&gt;Person.prototype--&gt;Object.prototype---&gt;null</span></div><div class="line"><span class="keyword">var</span> p=<span class="keyword">new</span> Person();</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(p <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Stu</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.code=<span class="number">110</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line">Stu.prototype=p;</div><div class="line"></div><div class="line"><span class="keyword">var</span> stu=<span class="keyword">new</span> Stu();</div><div class="line"></div><div class="line"><span class="comment">//stu--&gt;Stu.prototype---&gt;Person.prototpye--&gt;Object.prototype--null</span></div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(stu <span class="keyword">instanceof</span> <span class="built_in">Object</span>);</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/22/面向对象复习/" data-id="cj6f1jbsl0008hsogvs3rrb3e" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第五天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/21/博学谷第五天/" class="article-date">
+  <time datetime="2017-07-21T01:20:03.000Z" itemprop="datePublished">2017-07-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/21/博学谷第五天/">博学谷第五天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前端模块化"><a href="#前端模块化" class="headerlink" title="前端模块化"></a>前端模块化</h1><h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><p>说的就是对于js代码的管理。将指定功能的内容划分为一个个的模块，这些模块在使用的时候可以被引用进来。有复用性，并且代码分门别类，容易维护和管理。</p>
+<h3 id="CommonJS-模块化标准"><a href="#CommonJS-模块化标准" class="headerlink" title="CommonJS 模块化标准"></a>CommonJS 模块化标准</h3><p>CommonJS 通用模块定义（后端），主要用在Node.js当中,代表就是Node.ks</p>
+<h3 id="AMD-也是一个模块化标准"><a href="#AMD-也是一个模块化标准" class="headerlink" title="AMD 也是一个模块化标准"></a>AMD 也是一个模块化标准</h3><p>Async Module Definition 异步模块定义，适用于前端开发，代表Require.js<br>基于CommonJS衍生出来的（前端）</p>
+<h3 id="CMD-也是一个模块化标准"><a href="#CMD-也是一个模块化标准" class="headerlink" title="CMD 也是一个模块化标准"></a>CMD 也是一个模块化标准</h3><p>Common Module Difinition 适用于前端开发，代表sea.js</p>
+<h3 id="AMD与CMD区别"><a href="#AMD与CMD区别" class="headerlink" title="AMD与CMD区别"></a>AMD与CMD区别</h3><p>AMD 所有的模块尽可能早的会被加在进来<br>CMD as lazy as possible，只有需要的时候才会加载（会有一定的bug）</p>
+<p>require.js没有明显的bug,sea.js明显没有bug</p>
+<h1 id="require-js的学习"><a href="#require-js的学习" class="headerlink" title="require.js的学习"></a>require.js的学习</h1><p>requirejs 它是帮我们实现前端模块的工具，它遵循的标准AMD</p>
+<h2 id="定义模块"><a href="#定义模块" class="headerlink" title="定义模块"></a>定义模块</h2><ol>
+<li>requirejs提供了一个全局的函数，来定义模块difine()</li>
+<li><p>一个模块通常都会单独保存成一个文件</p>
+</li>
+<li><p>当模块要提供内容给别人的时候，需要使用returne语句将内容进行返回<br>当模块依赖于别的模块的时候，需要给当前模块添加依赖项</p>
+</li>
+</ol>
+<h2 id="引用模块"><a href="#引用模块" class="headerlink" title="引用模块"></a>引用模块</h2><ol>
+<li>requirejs提供了一个去哪儿去的函数。来引用模块require()。</li>
+<li>第二个参数的函数，为模块加在完毕之后的回调函数</li>
+<li>如果引用的模块有产出内容，在引用模块内通过returned返回了东西，我们可以通过在回调函数中添加形参，来接收前面模块返回的内容，行参合模块是一一对应的<br> 一般情况下，会将有返回值的全部放在前面，因为这样可以省略掉后面没有返回值的模块的形参</li>
+</ol>
+<h2 id="data-main属性的说明"><a href="#data-main属性的说明" class="headerlink" title="data-main属性的说明"></a>data-main属性的说明</h2><ul>
+<li>在请求requirejs的script标签中添加一个data-main属性，指向一个js文件 </li>
+<li>当requirejs加载完成之后，会直接去执行这个data-maind属性所指向的js文件的内容</li>
+<li>data-main所指的文件是异步加载的，所以如果在下面有依赖于data-main文件中实现的功能的代码，那么，很可能出错</li>
+</ul>
+<h3 id="使用difine-方法定义一个模块"><a href="#使用difine-方法定义一个模块" class="headerlink" title="使用difine()方法定义一个模块"></a>使用difine()方法定义一个模块</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//引入requirejs包</span></div><div class="line"><span class="built_in">require</span>([<span class="string">"./moduleA"</span>,<span class="string">".moduleB"</span>]);</div><div class="line"><span class="comment">//不加.js后缀</span></div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="comment">//模块中的所有代码都放在这里就行了</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">"我是模块中的代码"</span>);</div></pre></td></tr></table></figure>
+<p>在请求requirejs的script标签中添加一个data-main属性，指向一个js文件，当require夹在完成之后,会直接去执行这个data-main属性所指向的js文件的内容</p>
+<p>data-main所指向的文件是异步加载的，所以如果下面有依赖于data-main文件中实现的功能的代码，很有可能会出错。</p>
+<p>当直接使用require来引用一个模块的时候，那么模块的路径会以当前调用require方法的html页面为基础来查找<br>如果使用了data-main属性，路径的查找回忆这个data-main所指的文件为基础。</p>
+<h1 id="require-config方法的学习"><a href="#require-config方法的学习" class="headerlink" title="require.config方法的学习"></a>require.config方法的学习</h1><p>使用require加载第三方不支持模块化的内容</p>
+<ul>
+<li>config方法可以对requirejs进行配置</li>
+<li>传的参数是一个对象<h2 id="模块路径的研究"><a href="#模块路径的研究" class="headerlink" title="模块路径的研究"></a>模块路径的研究</h2></li>
+</ul>
+<ol>
+<li>如果使用basaUrl来设置基本路径，那么所有的模块查找都会以改路径作为基础</li>
+<li>如果按照baseUrl找不到文件，那么require还会以引用模块的代码所在所在的文件为基础继续查找</li>
+<li>如果通过config方法指定了baseUrl，那么所有的模块查找都会以baseUrl中设置的路径为基础<br><strong> 注意：在设置了baseUrl之后，文件会首先按照baseUrl作为基础去查找，如果找到了，就直接使用 </strong><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    <span class="comment">//注意：baseUrl都写成绝对路径</span></div><div class="line">    baseUrl:<span class="string">"/"</span>,</div><div class="line">    <span class="comment">//paths可以为模块路径设置一个别名（id）</span></div><div class="line">    <span class="comment">//以后在使用模块的时候，直接用别名即可</span></div><div class="line">    <span class="comment">//paths只需要添加特别常用的内容即可</span></div><div class="line">    paths:&#123;</div><div class="line">        <span class="comment">//属性名：别名</span></div><div class="line">        <span class="comment">//值：别名代表的模块路径</span></div><div class="line">        <span class="string">"a"</span>:<span class="string">"路径"</span></div><div class="line">    &#125;,</div><div class="line">    <span class="comment">//用来设置第三方不支持模块化的的内容的相关东西的</span></div><div class="line">    shim:&#123;</div><div class="line">        <span class="comment">//要设置哪个模块</span></div><div class="line">        animate:&#123;</div><div class="line">            <span class="comment">//对象中包含这个第三方内容的配置信息</span></div><div class="line">           <span class="comment">//exports就是用来设置这个模块化的输出项的就类似于给这个模块中添加了返回值</span></div><div class="line">           <span class="comment">//这个属性值是一个字符串，require会自动去这个模块中找和字符串</span></div><div class="line">           <span class="comment">//将这个全局变量设置为模块的返回值</span></div><div class="line">            exports:<span class="string">"obj"</span></div><div class="line">        &#125;,</div><div class="line">        bigger:&#123;</div><div class="line">            deps:[<span class="string">"jquery"</span>]</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div><div class="line"><span class="built_in">require</span>([<span class="string">"animate"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">animate</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(animate);</div><div class="line">&#125;);</div><div class="line"></div><div class="line"></div><div class="line"><span class="built_in">require</span>([<span class="string">"jquery"</span>, <span class="string">"bigger"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">$</span>)</span>&#123;</div><div class="line">    $(<span class="string">"#box"</span>).bigger();</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h3 id="使用require引入jQuery文件"><a href="#使用require引入jQuery文件" class="headerlink" title="使用require引入jQuery文件"></a>使用require引入jQuery文件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&lt;!--下面这种方式虽然可以实现功能，但是会破坏模块化的原则，不实用  --&gt;</div><div class="line">&lt;!-- <span class="xml"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"jquery.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span> --&gt;</div></pre></td></tr></table></figure>
+<p>使用require.js引入jquery<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//1. 要使用require来加载第三方内容，首先需要判断这个第三方内容是否支持模块化！</span></div><div class="line">   </div><div class="line">   <span class="comment">//去源文件中查找  有没有通过 define来定义模块，如果有，则支持，如果没有则不支持</span></div><div class="line"></div><div class="line">   <span class="comment">//2. 如果支持，直接使用require引用即可！</span></div><div class="line"></div><div class="line">   <span class="built_in">require</span>.config(&#123;</div><div class="line">       baseUrl: <span class="string">"/"</span>,</div><div class="line">       paths: &#123;</div><div class="line">           <span class="string">"jquery"</span>: <span class="string">"/views/assets/jquery/jquery.min"</span></div><div class="line">       &#125;</div><div class="line">   &#125;)</div><div class="line"></div><div class="line">   <span class="built_in">require</span>([<span class="string">"jquery"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">$</span>)</span>&#123;</div><div class="line">       <span class="built_in">console</span>.log($(<span class="string">"body"</span>));</div><div class="line">   &#125;);</div></pre></td></tr></table></figure></p>
+<h1 id="匿名模块和具名模块"><a href="#匿名模块和具名模块" class="headerlink" title="匿名模块和具名模块"></a>匿名模块和具名模块</h1><h2 id="匿名模块"><a href="#匿名模块" class="headerlink" title="匿名模块"></a>匿名模块</h2><p>没有名字的模块</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define([];<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="具名模块"><a href="#具名模块" class="headerlink" title="具名模块"></a>具名模块</h2><p>模块有自己的名字<br>具名模块在设置别名的时候，别名和名字尽量相同<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">define(<span class="string">"模块名"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h1 id="表单异步请求"><a href="#表单异步请求" class="headerlink" title="表单异步请求"></a>表单异步请求</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"form"</span>).submit(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">     <span class="comment">//使用插件提供的功能，进行异步表单提交</span></div><div class="line">     $(<span class="keyword">this</span>).ajaxSubmit(&#123;</div><div class="line">         url: <span class="string">"请求的地址，如果不设置这个属性，会默认去拿表单元素的action属性"</span>,</div><div class="line">         type: <span class="string">"请求方式，如果不设置这个属性，会默认去拿表单元素的method属性"</span>,</div><div class="line">         data: &#123; <span class="comment">/*附加一些表单之外的数据进行提交 */</span> &#125;,</div><div class="line">         success: <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">             <span class="built_in">console</span>.log(data);</div><div class="line">         &#125;,</div><div class="line">         error: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line"></div><div class="line">         &#125;,</div><div class="line">         complete: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">             </div><div class="line">         &#125;</div><div class="line">     &#125;);</div><div class="line"></div><div class="line">     <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line"> &#125;)</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/21/博学谷第五天/" data-id="cj6f1jbro0004hsogn3yc9sll" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第四天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/20/博学谷第四天/" class="article-date">
+  <time datetime="2017-07-20T13:15:06.000Z" itemprop="datePublished">2017-07-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/20/博学谷第四天/">博学谷第四天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h1><h2 id="index-php的作用介绍"><a href="#index-php的作用介绍" class="headerlink" title="index.php的作用介绍"></a>index.php的作用介绍</h2><ol>
+<li>简化url</li>
+<li>实现公共部分的复用</li>
+</ol>
+<h2 id="相对路径和绝对路径"><a href="#相对路径和绝对路径" class="headerlink" title="相对路径和绝对路径"></a>相对路径和绝对路径</h2><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>相对路径是对于当前路径来说的，以当前路径为参照查找的路径，有的时候直接写绝对路径，路径比较深，要写的路径也比较长</p>
+<h3 id="绝对路径（无论在哪个页面，无论如何都会找到文件）"><a href="#绝对路径（无论在哪个页面，无论如何都会找到文件）" class="headerlink" title="绝对路径（无论在哪个页面，无论如何都会找到文件）"></a>绝对路径（无论在哪个页面，无论如何都会找到文件）</h3><p>绝对路径是从根目录开始查找，跟当前文件没有关系</p>
+<hr>
+<h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><h2 id="http是什么"><a href="#http是什么" class="headerlink" title="http是什么"></a>http是什么</h2><p>HyperText Transfer Protocol ,超文本传输协议</p>
+<h2 id="http协议的作用"><a href="#http协议的作用" class="headerlink" title="http协议的作用"></a>http协议的作用</h2><p>http协议主要用作浏览器和服务器之间的数据传输</p>
+<h2 id="http协议是无状态的"><a href="#http协议是无状态的" class="headerlink" title="http协议是无状态的"></a>http协议是无状态的</h2><p>服务器并不会记住浏览器的状态，每次请求都会认为是新的浏览器在访问服务器</p>
+<h2 id="无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）"><a href="#无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）" class="headerlink" title="无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）"></a>无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）</h2><p>cookie<br>session</p>
+<h3 id="如何通过cookie和session实现http会话"><a href="#如何通过cookie和session实现http会话" class="headerlink" title="如何通过cookie和session实现http会话"></a>如何通过cookie和session实现http会话</h3><p>服务器端可以在session中存储浏览器的状态信息，这个session中存储的数据会具备一个session id，在服务器在响应请求的时候，将这个session id直接写入到浏览器端的cookie中，由于cookie在每次请求的时候，都会被自动的被请求携带到服务器端，所以每次请求这个session id 都会被拿到服务器端，那么服务器就可以通过浏览器发送过来的session id 来找，浏览器上一次的状态。</p>
+<h1 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器端的一个存储空间。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>cookie的存储是以域名为单位的，各个域名之间不能互相访问cookie。</li>
+<li>每个域名能够在cooki中存储的内容是有大小限制的，4kb<br>1kb=1024b ,一个汉字占2b一个英文字母占1b</li>
+<li>cookie中存储的数据是有时限的。（默认浏览器关闭，cookie消失）</li>
+<li>cookie在每个域名下是分路径存储的，在父级路径中是不能访问到存储在子级路径中的cookie，但是，子级路径可以访问到存储在父级路径中的cookie，所以一般情况下，都将所有cookie存储在根目录下，以便所有的路径都可以访问<br>例如<br>在<a href="http://studyit.com/danshboard/index" target="_blank" rel="external">http://studyit.com/danshboard/index</a> 页面中存储了一个cookie，那么在<a href="http://studyit.com" target="_blank" rel="external">http://studyit.com</a> 这个页面就访问不到cookie了</li>
+<li>cookie存储的信息，会在每次请求的时候，会被携带者发送到服务器</li>
+</ol>
+<h2 id="在浏览器端通过js代码来操作cookie"><a href="#在浏览器端通过js代码来操作cookie" class="headerlink" title="在浏览器端通过js代码来操作cookie"></a>在浏览器端通过js代码来操作cookie</h2><h3 id="从cookie中获取内容"><a href="#从cookie中获取内容" class="headerlink" title="从cookie中获取内容"></a>从cookie中获取内容</h3><p> 可以通过“document.cookie” 属性来访问cookie中的内容，cookie的本质其实是一串字符串，以“；”隔开，键值对“key=value”。</p>
+<h3 id="往cookie中存储内容"><a href="#往cookie中存储内容" class="headerlink" title="往cookie中存储内容"></a>往cookie中存储内容</h3><p> 直接给“document.cookie”使用“=”赋值即可将内容存储到cookie</p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">    <span class="built_in">document</span>.cookie=<span class="string">"name=张三"</span>;</div><div class="line">    <span class="built_in">document</span>.cookie=<span class="string">"age=18"</span>;    <span class="comment">//不会覆盖，会追加在“name=张三”之后，且用“；”分隔 </span></div><div class="line"><span class="comment">//Object.defineProperty</span></div><div class="line"><span class="comment">//过期时间的设置</span></div><div class="line"><span class="keyword">var</span> time=<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"2017-07-20 10:30:00"</span>);</div><div class="line"><span class="built_in">document</span>.cookie=<span class="string">"name=张三;expires="</span>+time.toGMTString();</div><div class="line"><span class="comment">//toGMTString()方法可根据格林威治</span></div><div class="line">    <span class="keyword">var</span> cookie=<span class="built_in">document</span>.cookie;</div><div class="line">    <span class="built_in">console</span>.log(ciikie);</div></pre></td></tr></table></figure>
+</code></pre><h3 id="cookie存储的路径的更改"><a href="#cookie存储的路径的更改" class="headerlink" title="cookie存储的路径的更改"></a>cookie存储的路径的更改</h3><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.cookie=<span class="string">"gender=mele;path=/"</span>;</div><div class="line"><span class="keyword">var</span> cookie=<span class="built_in">document</span>.cookie;</div><div class="line"><span class="built_in">console</span>.log(cookie);</div><div class="line"><span class="comment">//放在根目录下，可以修改路径。cookie分路径保存</span></div></pre></td></tr></table></figure>
+</code></pre><h2 id="自己分装一个操作cookie的方法"><a href="#自己分装一个操作cookie的方法" class="headerlink" title="自己分装一个操作cookie的方法"></a>自己分装一个操作cookie的方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//用户可以传进来要存储的键值对，过期时间，存储路径</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">key,value,option</span>)</span>&#123;</div><div class="line">    <span class="built_in">document</span>.cookie=key+<span class="string">"="</span>+value+<span class="string">";ecpires="</span>+option.toGMTString()<span class="string">"</span></div><div class="line"><span class="string">&#125;</span></div><div class="line"><span class="string">function getCookie(key)&#123;</span></div><div class="line"><span class="string">    //将cookie的内容以“;”进行分割；</span></div><div class="line"><span class="string">    //分割之后拿到的是包含“key=value”的键值对的数组</span></div><div class="line"><span class="string">    var cookoies=document.cookie.split("</span>;<span class="string">");</span></div><div class="line"><span class="string">    for（var i=0;i&lt;cookies.length;i++）&#123;</span></div><div class="line"><span class="string">        var cookie=cookies[i];</span></div><div class="line"><span class="string">        var keyValuePair=cookie.split("</span>=<span class="string">");</span></div><div class="line"><span class="string">        obj[keyValuePair[0].trim()]=keyValuePair[1];</span></div><div class="line"><span class="string">    &#125;</span></div><div class="line"><span class="string">    return obj;</span></div><div class="line"><span class="string">&#125;</span></div></pre></td></tr></table></figure>
+<h2 id="jQuery中操作cookie的方法"><a href="#jQuery中操作cookie的方法" class="headerlink" title="jQuery中操作cookie的方法"></a>jQuery中操作cookie的方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$.cookie=(<span class="string">"许嵩"</span>,<span class="string">"男神"</span>,&#123;</div><div class="line">    expires:<span class="number">10</span>;</div><div class="line">    path:<span class="string">"/"</span></div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log($.cookie(<span class="string">"name"</span>));</div><div class="line">$.remove.cookie(<span class="string">"许嵩"</span>);</div></pre></td></tr></table></figure>
+<h2 id="服务器端操作cookie"><a href="#服务器端操作cookie" class="headerlink" title="服务器端操作cookie"></a>服务器端操作cookie</h2><h1 id="sesstion"><a href="#sesstion" class="headerlink" title="sesstion"></a>sesstion</h1><h2 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h2><p> 是服务器端的一个存储空间</p>
+<h2 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>session也是有过期时间的，根据后端使用的技术不同，session的过期时间也不一样，session的过期时间是滑动的</li>
+<li>session只能在服务器端操作，浏览器端是不能操作到session的</li>
+</ol>
+<h2 id="session的操作"><a href="#session的操作" class="headerlink" title="session的操作"></a>session的操作</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">header(<span class="string">"Content-type:text/html;charset=utf-8"</span>);</div><div class="line"></div><div class="line"><span class="comment">//开启session</span></div><div class="line">session_atart(); <span class="comment">//必须的</span></div><div class="line"></div><div class="line"><span class="comment">//存</span></div><div class="line">$_SESSION[<span class="string">"name"</span>]=<span class="string">"张三"</span>;</div><div class="line"></div><div class="line"><span class="comment">//取</span></div><div class="line"><span class="keyword">echo</span> $_SESSION[<span class="string">"name"</span>];</div></pre></td></tr></table></figure>
+<h1 id="Object-defineProperty"><a href="#Object-defineProperty" class="headerlink" title="Object.defineProperty"></a>Object.defineProperty</h1><h3 id="添加属性除了点语法、-语法，除了字面量方式，还有-Object-defineProperty"><a href="#添加属性除了点语法、-语法，除了字面量方式，还有-Object-defineProperty" class="headerlink" title="添加属性除了点语法、[]语法，除了字面量方式，还有 Object.defineProperty();"></a>添加属性除了点语法、[]语法，除了字面量方式，还有 Object.defineProperty();</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">//第一个参数：要给哪个对象添加属性</span></div><div class="line"> <span class="comment">//第二个参数：要添加的属性的名称</span></div><div class="line"> <span class="comment">//第三个参数：是一个对象，这个对象里面包含要填的属性的一些设置内容</span></div><div class="line"> <span class="comment">//wtitable:设置属性是否可以被赋值，默认false</span></div><div class="line"> <span class="comment">//enumerble:设置属性是i否可以被 for-in 遍历到，默认false</span></div><div class="line"> <span class="comment">//configirable:设置实行是否可以被删除，默认false</span></div><div class="line"> <span class="comment">//value:设置属性默认值</span></div><div class="line"> <span class="comment">//set:是一个函数,会在属性被使用“=”赋值的时候自动调用</span></div><div class="line">     <span class="comment">//用户所赋值的内容会被当作参数传入set方法中</span></div><div class="line"> <span class="comment">//get:是一个函数，会在属性被获取的时候自动调用</span></div><div class="line"> <span class="comment">//set和get不能跟wtitable、value同时出现</span></div><div class="line"><span class="keyword">var</span> _yanzhi;</div><div class="line"> <span class="built_in">Object</span>.defineProperty(xs,<span class="string">"颜值"</span>,&#123;</div><div class="line">     enumerble：<span class="literal">true</span>;</div><div class="line">     set:<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">         <span class="keyword">this</span>._yanzhi=value;</div><div class="line">         <span class="built_in">console</span>.log(<span class="string">"set方法被调用了"</span>);</div><div class="line">     &#125;</div><div class="line">     get:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">         <span class="keyword">return</span> <span class="keyword">this</span>._yanzhi;</div><div class="line">         <span class="built_in">console</span>.log(<span class="string">"get方法被调用了"</span>);</div><div class="line">     &#125;</div><div class="line">     </div><div class="line"> &#125;);</div><div class="line"> xs[<span class="string">"颜值"</span>]=<span class="number">123</span>;<span class="comment">//赋值</span></div><div class="line"> xs[<span class="string">"颜值"</span>];<span class="comment">//调用</span></div><div class="line"> <span class="built_in">console</span>.log（xs）;</div></pre></td></tr></table></figure>
+<p>doc.butue.com  博学谷接口文档地址</p>
+<h1 id="接口说明"><a href="#接口说明" class="headerlink" title="接口说明"></a>接口说明</h1><h2 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h2><p>文档:<a href="http://doc.botue.com" target="_blank" rel="external">http://doc.botue.com</a><br>demo:<a href="http://bxg.botue.com" target="_blank" rel="external">http://bxg.botue.com</a><br>接口地址:<a href="http://api.botue.com/v3" target="_blank" rel="external">http://api.botue.com/v3</a></p>
+<h2 id="我们写的静态网站地址"><a href="#我们写的静态网站地址" class="headerlink" title="我们写的静态网站地址"></a>我们写的静态网站地址</h2><p><a href="http://studyit.com" target="_blank" rel="external">http://studyit.com</a></p>
+<p>要从自己写的静态网页向接口服务器发送数据请求</p>
+<h2 id="跨域：当前所在的网页的域名，和要请求的数据的域名，不一样"><a href="#跨域：当前所在的网页的域名，和要请求的数据的域名，不一样" class="headerlink" title="跨域：当前所在的网页的域名，和要请求的数据的域名，不一样"></a>跨域：当前所在的网页的域名，和要请求的数据的域名，不一样</h2><p>由于浏览器的同源策略，域名中（协议、域名、端口）有任意一部分不一致，就会产生跨域请求。浏览器会直接将跨域请求阻止。</p>
+<ol>
+<li>协议</li>
+<li>域名</li>
+<li>端口</li>
+</ol>
+<h2 id="跨域的解决方案"><a href="#跨域的解决方案" class="headerlink" title="跨域的解决方案"></a>跨域的解决方案</h2><ol>
+<li>jsonp（最常用）<br>原理：通过动态创建script标签，将script标签的src属性设置为要请求的接口地址，这样将script加到页面上的时候，会自动向接口发送请求了。服务器端返回的数据会直接被当作js代码执行。</li>
+</ol>
+<p>服务器端返回的数据，有格式的要求，必须是一个函数调用的形式<br>    函数名(数据)<br>这个函数可以在请求之前就在全局之前创建号，那么请求完成之后，会自动调用这个函数，就类似于请求成功的回调函数了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">url,callback</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> script=<span class="built_in">document</span>,createElement(<span class="string">"script"</span>);</div><div class="line">    <span class="comment">//j将存在全局的函数名称作为参数传递给了后台</span></div><div class="line">    <span class="comment">//后台在接收到这个参数之后，会将返回的数据设置成 success(&#123;&#125;)</span></div><div class="line">    script.src=url;</div><div class="line">    <span class="built_in">document</span>,body.appendCild(script);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li><p>后台在相应头中添加一个 Access-Control-Allow-Origin:*</p>
+</li>
+<li><p>反向代理<br>会增加服务器的压力<br> 步骤：<br> ① 打开 http.conf（apache之下）</p>
+<pre><code>找到如下内容
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#LoadModule proxy_module modules/mod_proxy.so</div><div class="line">#LoadModule proxy_http_module modules/mod_proxy_http.so</div></pre></td></tr></table></figure>
+
+去掉前面的的 #
+</code></pre><p> ②打开extra/httpd-vhosts.conf</p>
+<pre><code>找到博学谷网站的virtual-hosts节点，在里面添加
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ProxyRequests off</div><div class="line">ProxyPass /api http://api.botue.com/v3</div></pre></td></tr></table></figure>
+
+ProxyPass 本余名的路径 远程接口的域名
+用本域名的一个指定的路径，，来代表远程的接口的域名
+可以直接访问本域名的这个路径，就相当于是向接口发送了请求
+</code></pre></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/20/博学谷第四天/" data-id="cj6f1jbs00007hsogt9nsq3gp" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第三天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/18/博学谷第三天/" class="article-date">
+  <time datetime="2017-07-18T13:15:06.000Z" itemprop="datePublished">2017-07-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/18/博学谷第三天/">博学谷第三天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="公司的人员组成"><a href="#公司的人员组成" class="headerlink" title="公司的人员组成"></a>公司的人员组成</h1><h2 id="产品经理"><a href="#产品经理" class="headerlink" title="产品经理"></a>产品经理</h2><p>和客户确定需求，讨论产品功能<br>产品：需求文档、原型图</p>
+<h2 id="UI-设计部门"><a href="#UI-设计部门" class="headerlink" title="UI 设计部门"></a>UI 设计部门</h2><p>根据产品给的原型图，设计出产品的设计图稿，</p>
+<h2 id="后端-Backend"><a href="#后端-Backend" class="headerlink" title="后端 Backend"></a>后端 Backend</h2><p>负责设计数据库，写程序操作数据库<br>提供数据接口、接口文档</p>
+<h2 id="前端-Frontend"><a href="#前端-Frontend" class="headerlink" title="前端 Frontend"></a>前端 Frontend</h2><p>当UI做完设计图之后，前端人员要讲设计图转换成html静态页面<br>使用接口文档获取后台数据，做前端的渲染工作<br>交互特效的实现</p>
+<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>测试人员负责对开发人员做出的产品做测试，找bug</p>
+<h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h2><p>产品的运营和维护，产品上线，服务器的管理</p>
+<h1 id="前后端工作模式"><a href="#前后端工作模式" class="headerlink" title="前后端工作模式"></a>前后端工作模式</h1><h2 id="前后端完全分离（趋势）"><a href="#前后端完全分离（趋势）" class="headerlink" title="前后端完全分离（趋势）"></a>前后端完全分离（趋势）</h2><p>前段只负责所有数据展示的工作，后端只负责提供数据</p>
+<h2 id="前后端混合式开发"><a href="#前后端混合式开发" class="headerlink" title="前后端混合式开发"></a>前后端混合式开发</h2><p>后端不止需要操作数据提供数据，还需要将前端人员写好的html页面，和后台语言进行整合，最终实现产品效果</p>
+<h2 id="前后端半混合式开发（最常见）"><a href="#前后端半混合式开发（最常见）" class="headerlink" title="前后端半混合式开发（最常见）"></a>前后端半混合式开发（最常见）</h2><p>网页中的数据不仅有一部分是由后台人员进行渲染，还有另外一些是由前端人员通过Ajax请求进行渲染的</p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><ol>
+<li>在hosts文件当中添加一个域名<br>studyit.com<br>www.studyit.com</li>
+</ol>
+<p>加hosts文件的作用？<br>设置一个域名可以用来访问本地127.0.0.1地址<br>hosts文件与dns服务器的功能是一致的，他们都是用来高速浏览器，域名对应的ip地址是谁。<br>如果hosts文件中有域名信息，那么就不回去DNS服务器上查找。<br>所以我们在hosts文件中添加一个域名，让这个域名指向本地127.0.0.1，</p>
+<ol>
+<li>配置wamp<br>2.1 开启vhosts配置<br>打开httpd.conf文件，找到<br>include conf<br>2.2 配置<br>vhosts Virtual Hosts 虚拟主机<br>通过vhosts配置可以将域名和根目录进行绑定</li>
+</ol>
+<p>模版<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></div><div class="line">    DocumentRoot "C:/wamp/www/bxg7"</div><div class="line">    ServerName bxg7.com</div><div class="line">    ServerAlias www.bxg7.com</div><div class="line">    ErrorLog "logs/dummy-host.example.com-error.log"</div><div class="line">    CustomLog "logs/dummy-host.example.com-access.log" common</div><div class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">Directory</span> "<span class="attr">C:</span>/<span class="attr">wamp</span>/<span class="attr">www</span>/<span class="attr">bxg7</span>"&gt;</span></div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride all</div><div class="line">    Order Deny,Allow</div><div class="line">    Allow from all</div><div class="line"><span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>新版<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">VirtualHost</span> *<span class="attr">:80</span>&gt;</span></div><div class="line">	ServerName studyit.com</div><div class="line">	DocumentRoot F:/boxuegu</div><div class="line">	<span class="tag">&lt;<span class="name">Directory</span>  "<span class="attr">F:</span>/<span class="attr">boxuegu</span>"&gt;</span></div><div class="line">		Options +Indexes +Includes +FollowSymLinks +MultiViews</div><div class="line">		AllowOverride All</div><div class="line">		Require local</div><div class="line">	<span class="tag">&lt;/<span class="name">Directory</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">VirtualHost</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h1 id="使用php的一些代码优化url地址"><a href="#使用php的一些代码优化url地址" class="headerlink" title="使用php的一些代码优化url地址"></a>使用php的一些代码优化url地址</h1><h2 id="使用index-php"><a href="#使用index-php" class="headerlink" title="使用index.php"></a>使用index.php</h2><p>由于我们对项目中的文件根据文件的不同功能模块，进行了文件夹划分，所以导致文件的访问路径变得特别长，所以我们可以通过index.php使用后端语言，对我们url进行简单的优化。</p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>直接访问文件的形式（直接访问静态资源的方式）<br><a href="http://studyit.com/views/dashboard/index.html" target="_blank" rel="external">http://studyit.com/views/dashboard/index.html</a><br>使用index.php的形式<br><a href="http://studyit.com/index.php/模块名称/文件名" target="_blank" rel="external">http://studyit.com/index.php/模块名称/文件名</a><br><a href="http://studyit.com/模块名称/文件名" target="_blank" rel="external">http://studyit.com/模块名称/文件名</a></p>
+<p>在index.php中，可以通过<code>$_SERVER[&quot;PATH_INFO&quot;]</code>来获取到用户传入的模块名称和文件名称，再使用php中的<code>include</code>的关键字，将模块和文件名称对应的html文件获取到之后，返回给浏览器。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line">    header(<span class="string">"Content-type:text/html;charset=utf-8"</span>);</div><div class="line">    var_dump($_SERVER);</div><div class="line">    </div><div class="line">    $directory=<span class="string">"dashboard"</span>;</div><div class="line">    $fileName=<span class="string">"index"</span>;</div><div class="line">    <span class="comment">//如果用户在输入连接的时候，后面跟上了模块名称以及文件名称</span></div><div class="line">    <span class="comment">//就是用用户传入的模块名称以及文件名称，给$directory重新命名</span></div><div class="line">    <span class="keyword">if</span>(array_key_exists(<span class="string">"PATH_INFO"</span>,$_SERVER))&#123;</div><div class="line">        <span class="keyword">echo</span>(<span class="string">"用户输入模块以及文件名"</span>);</div><div class="line">        $pathInfo=$_SERVER[<span class="string">"PATH_INFO"</span>];</div><div class="line">        $pathInfo=substr($pathInfo,<span class="number">1</span>);</div><div class="line">        $pathInfo=explode(<span class="string">"/"</span>,$pathInfo);</div><div class="line"></div><div class="line">        $directory=$pathInfo[<span class="number">0</span>];</div><div class="line">        <span class="comment">//如果用户只传了一个dashboard进来，只传了模块名称进来，我们就不管后面的文件名</span></div><div class="line">        <span class="comment">//直接使用默认的就可以</span></div><div class="line">        <span class="comment">//如果用户将模块名称和文件名称都传进来</span></div><div class="line">    &#125;<span class="keyword">else</span>&#123;</div><div class="line">        <span class="keyword">echo</span>(<span class="string">"用户没有输入模块以及文件名"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line"><span class="meta">?&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="使用index-php-1"><a href="#使用index-php-1" class="headerlink" title="使用index.php"></a>使用index.php</h1><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>由于我们对项目中的文件根据文件的不同的功能模块，进行了文件夹划分，所以导致，文件的访问路径变特别长，所以我们可以通过index.php 使用后端语言，对我们url进行简单的优化！！</p>
+<h2 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h2><p>直接访问文件的形式(直接访问静态资源的方式)<br><a href="http://studyit.com/views/dashboard/index.html" target="_blank" rel="external">http://studyit.com/views/dashboard/index.html</a></p>
+<p>使用index.php的形式<br><a href="http://studyit.com/index.php/模块名称/文件名" target="_blank" rel="external">http://studyit.com/index.php/模块名称/文件名</a></p>
+<p><a href="http://studyit.com/模块名称/文件名" target="_blank" rel="external">http://studyit.com/模块名称/文件名</a></p>
+<p>在index.php中，可以通过<code>$_SERVER[&quot;PATH_INFO&quot;]</code>来获取到用户传入的模块名称和文件名称</p>
+<p>再使用php中的<code>include</code>关键字，将模块名称和文件名称对应的html文件获取到之后，返回给浏览器</p>
+<p>如果访问一个网站的时候，直接输入域名而不写后面的路径</p>
+<p>服务器应用（apache）会自动在网站根目录中搜索index为名称的文件</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/18/博学谷第三天/" data-id="cj6f1jbrf0001hsogl2l0cmsn" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-博学谷第二天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/17/博学谷第二天/" class="article-date">
+  <time datetime="2017-07-17T13:15:06.000Z" itemprop="datePublished">2017-07-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/17/博学谷第二天/">博学谷第二天</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h1><p>分支可以理解为版本库的备份<br>在版本库中默认有一个主分支，我们可以通过git命令来创建一个新的分支，这个新的分支上面会有当前这个分支上所有的内容，也就类似于是做了一个备份出来。</p>
+<h2 id="分支的操作"><a href="#分支的操作" class="headerlink" title="分支的操作"></a>分支的操作</h2><ol>
+<li>如何创建分支<br>git branch 分支名称</li>
+</ol>
+<ol>
+<li>如何切换分支<br>默认情况下，我们处在主分支下面，要在其他分支下做开发，首先要切换到该分支</li>
+</ol>
+<p>git checkout 分支名</p>
+<ol>
+<li><p>如何合并分支<br>将指定的分支合并到当前分支上！<br>git merge 要合并的分支名称</p>
+</li>
+<li><p>删除分支<br>git branch -d 分支名称</p>
+</li>
+</ol>
+<h2 id="分支的使用场景"><a href="#分支的使用场景" class="headerlink" title="分支的使用场景"></a>分支的使用场景</h2><p>多任务并行开发的时候，分支可以做到多个任务之间不会相互影响！</p>
+<p>每当要进行一个新任务的开发的时候，都需要创建一个分支出来，单独做开发，功能完成之后，再将分支合并回去。</p>
+<h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>主分支（master）是在第一次提交完成之后，才有的！！</p>
+<p>每次切换分支之前，要将所有的内容做一次提交！！！否则可能丢失修改！！</p>
+<p>任意分支都可开辟新的分支，新创建出来的分支，会拥有当前分支中所有的已有内容！</p>
+<h2 id="快捷创建并切换分支的命令"><a href="#快捷创建并切换分支的命令" class="headerlink" title="快捷创建并切换分支的命令"></a>快捷创建并切换分支的命令</h2><p>git chekcout -b 分支名称</p>
+<h2 id="回滚（回退到某个版本）之后，如果后悔了，不想回退了"><a href="#回滚（回退到某个版本）之后，如果后悔了，不想回退了" class="headerlink" title="回滚（回退到某个版本）之后，如果后悔了，不想回退了"></a>回滚（回退到某个版本）之后，如果后悔了，不想回退了</h2><p>通过git log -g  查看所要恢复的版本号（短期内可操作）</p>
+<p>git branch 分支名 版本号</p>
+<p>合并分支！</p>
+<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>远程仓库，主要用来，做多人协作开发的时候，代码库的共享工作！</p>
+<h2 id="gitHub-就是一个远程仓库！"><a href="#gitHub-就是一个远程仓库！" class="headerlink" title="gitHub 就是一个远程仓库！"></a>gitHub 就是一个远程仓库！</h2><h2 id="远程仓库-1"><a href="#远程仓库-1" class="headerlink" title="远程仓库"></a>远程仓库</h2><h3 id="1-创建一个远程仓库"><a href="#1-创建一个远程仓库" class="headerlink" title="1. 创建一个远程仓库"></a>1. 创建一个远程仓库</h3><p>创建远程仓库的时候，文件夹名称一般都会用.git来结尾，表示当前文件夹是一个git库！</p>
+<p>远程仓库其实就是一个裸仓库，裸仓库，就是直接将.git文件夹中的所有的内容直接暴露出来，不会再有.git文件夹了!</p>
+<p>远程仓库的唯一的作用，就是用来做版本库共享。不能再远程仓库中做开发！</p>
+<p>远程仓库创建好之后，一般就不会再有别的操作了！</p>
+<p>git init –bare</p>
+<h3 id="2-将本地仓库推送到远程仓库中"><a href="#2-将本地仓库推送到远程仓库中" class="headerlink" title="2. 将本地仓库推送到远程仓库中"></a>2. 将本地仓库推送到远程仓库中</h3><p>git push 远程仓库的地址 本地分支名称:远程分支名称</p>
+<p>如果本地分支的名称好远程分支的名称一模一样那就可以只写一个分支名<br>例如： git push <a href="https://github.com/avakpan/frontend9.git" target="_blank" rel="external">https://github.com/avakpan/frontend9.git</a> master</p>
+<h3 id="3-从远程仓库获取版本库到本地"><a href="#3-从远程仓库获取版本库到本地" class="headerlink" title="3. 从远程仓库获取版本库到本地"></a>3. 从远程仓库获取版本库到本地</h3><p>将远程仓库的内容拷贝一份放到指定的本地文件夹当中，如果不指定本地文件夹名称，git会自动创建一个和远程仓库文件夹名称相同的文件夹</p>
+<p>git clone 远程仓库地址 本地文件夹名称</p>
+<h3 id="4-从远程仓库获取更新的内容"><a href="#4-从远程仓库获取更新的内容" class="headerlink" title="4. 从远程仓库获取更新的内容"></a>4. 从远程仓库获取更新的内容</h3><p>git pull 远程仓库地址 分支名称</p>
+<h3 id="5-原则"><a href="#5-原则" class="headerlink" title="5. 原则"></a>5. 原则</h3><p>一般情况下 需要向远程仓库推送新的内容之前，需要先获取一次最新的代码<br>执行push之前要执行一次pull操作</p>
+<h2 id="远程仓库刚创建出来的时候是一个空仓库"><a href="#远程仓库刚创建出来的时候是一个空仓库" class="headerlink" title="远程仓库刚创建出来的时候是一个空仓库"></a>远程仓库刚创建出来的时候是一个空仓库</h2><p>这时，可以将任意本地仓库通过push命令推送到远程仓库中，但是一旦远程仓库被push过一次之后，仓库就不再是一个空仓库了，之后能够被push到这个仓库中的内容，都是和仓库相关的，不能是任意一个好不相关的仓库，如果使用一个毫不相关的仓库进行push，会被拒绝！</p>
+<h2 id="远程地址管理"><a href="#远程地址管理" class="headerlink" title="远程地址管理"></a>远程地址管理</h2><h3 id="展示所有的别名"><a href="#展示所有的别名" class="headerlink" title="展示所有的别名"></a>展示所有的别名</h3><p>git remote</p>
+<p>注意： 如果当前项目是通过git clone从远程仓库获取下来的，那么会默认的有一个远程地址的别名(origin)，指向的就是当时clone这个项目的时候的远程地址</p>
+<p>origin <a href="https://github.com/avakpan/frontend9.git" target="_blank" rel="external">https://github.com/avakpan/frontend9.git</a></p>
+<h3 id="添加远程地址别名"><a href="#添加远程地址别名" class="headerlink" title="添加远程地址别名"></a>添加远程地址别名</h3><p>git remote add 别名 远程地址</p>
+<h3 id="删除远程地址"><a href="#删除远程地址" class="headerlink" title="删除远程地址"></a>删除远程地址</h3><p>git remote remove 别名</p>
+<h1 id="SSH协议"><a href="#SSH协议" class="headerlink" title="SSH协议"></a>SSH协议</h1><p>Secure Shell 安全的shell</p>
+<p>http协议的格式</p>
+<p><a href="http://域名:端口号" target="_blank" rel="external">http://域名:端口号</a></p>
+<p>ssh 协议格式</p>
+<p> 用户名@域名</p>
+<p>ssh 一般用作服务器的远程管理，我们可以通过ssh安全的shell管理服务器</p>
+<p>在bash中提供了一个ssh命令，这个命令就是可以通过ssh协议连接服务器进行管理的！</p>
+<h2 id="ssh命令的说明"><a href="#ssh命令的说明" class="headerlink" title="ssh命令的说明"></a>ssh命令的说明</h2><p>ssh 用户名@域名</p>
+<p>以指定的用户名使用ssh协议登录域名对应的远程服务器</p>
+<h2 id="ssh免密登录的原理"><a href="#ssh免密登录的原理" class="headerlink" title="ssh免密登录的原理"></a>ssh免密登录的原理</h2><p>在服务器端，有一个名单，名单中存储所有能够登录当前服务器的客户端的公钥！</p>
+<p>由于每次客户端在请求登录的时候，会自动将客户端本身的公钥自动发送给服务器，服务器在拿到公钥之后，和名单中的内容进行一一对照，如果有当前这个公钥，那么就直接允许登录了！</p>
+<h2 id="在自己电脑上生成-公钥以及私钥！"><a href="#在自己电脑上生成-公钥以及私钥！" class="headerlink" title="在自己电脑上生成 公钥以及私钥！"></a>在自己电脑上生成 公钥以及私钥！</h2><p>ssh-keygen -t rsa</p>
+<p>执行这个命令的时候，一路默认，一路敲回车<br>直到看到冒泡泡为止！</p>
+<p>生成的秘钥默认在 用户根目录下面的.ssh文件夹中</p>
+<p>c:\users\你自己的用户名.ssh  </p>
+<h2 id="实现服务器免密登录的步骤（了解）"><a href="#实现服务器免密登录的步骤（了解）" class="headerlink" title="实现服务器免密登录的步骤（了解）"></a>实现服务器免密登录的步骤（了解）</h2><ol>
+<li><p>如果当前电脑从未生成过秘钥，要执行<br>ssh-keygen -t rsa<br>生成秘钥</p>
+</li>
+<li><p>在用户根目录下面的.ssh文件夹中找到生成密钥，id_rsa.pub就是我们需要的公钥文件，复制里面所有的内容</p>
+</li>
+<li><p>登录到服务器（这次登录还是要密码的），在用户根目录下面找到.ssh文件夹</p>
+</li>
+<li><p>打开.ssh文件夹中的 authorized_keys文件</p>
+</li>
+<li><p>将刚才复制的所有的公钥的内容 粘贴到该文件最后，保存退出</p>
+</li>
+<li><p>再次登录服务器，便不再需要密码了！！</p>
+</li>
+</ol>
+<h2 id="实现github免密登录的过程"><a href="#实现github免密登录的过程" class="headerlink" title="实现github免密登录的过程"></a>实现github免密登录的过程</h2><ol>
+<li><p>如果当前电脑从未生成过秘钥，要执行<br>ssh-keygen -t rsa<br>生成秘钥</p>
+</li>
+<li><p>在用户根目录下面的.ssh文件夹中找到生成密钥，id_rsa.pub就是我们需要的公钥文件，复制里面所有的内容</p>
+</li>
+<li><p>打开github页面</p>
+</li>
+<li><p>点击自己头像 选择下面的settings</p>
+</li>
+<li><p>进入到settings页面之后左边栏中会有一个 ssh and gpg keys ，点击</p>
+</li>
+<li><p>进入到该页面之后，页面的右上角会有一个 New SSH Key 的绿色按钮， 点击</p>
+</li>
+<li><p>title文本框中选择性（可写可不写）的输入内容</p>
+</li>
+<li><p>在key文本框中，粘贴刚才复制的公钥的全部内容</p>
+</li>
+<li><p>点击下面的绿色的 Add SSH Key 按钮</p>
+</li>
+<li><p>获取或者push项目的时候，一定要记得选择ssh连接，才可以实现免密登录！</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/17/博学谷第二天/" data-id="cj6f1jbrj0002hsoga0cgzg0k" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/26/博学谷第八天/">博学谷第八天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/25/博学谷部分知识总结/">博学谷部分知识总结</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/24/博学谷第七天/">博学谷第七天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/23/博学谷第六天/">博学谷第六天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/22/面向对象复习/">面向对象复习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

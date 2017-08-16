@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>博学谷第四天 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="复习index.php的作用介绍 简化url 实现公共部分的复用  相对路径和绝对路径相对路径相对路径是对于当前路径来说的，以当前路径为参照查找的路径，有的时候直接写绝对路径，路径比较深，要写的路径也比较长 绝对路径（无论在哪个页面，无论如何都会找到文件）绝对路径是从根目录开始查找，跟当前文件没有关系  httphttp是什么HyperText Transfer Protocol ,超文本传输协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博学谷第四天">
+<meta property="og:url" content="http://yoursite.com/2017/07/20/博学谷第四天/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="复习index.php的作用介绍 简化url 实现公共部分的复用  相对路径和绝对路径相对路径相对路径是对于当前路径来说的，以当前路径为参照查找的路径，有的时候直接写绝对路径，路径比较深，要写的路径也比较长 绝对路径（无论在哪个页面，无论如何都会找到文件）绝对路径是从根目录开始查找，跟当前文件没有关系  httphttp是什么HyperText Transfer Protocol ,超文本传输协议">
+<meta property="og:updated_time" content="2017-07-25T05:14:15.896Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="博学谷第四天">
+<meta name="twitter:description" content="复习index.php的作用介绍 简化url 实现公共部分的复用  相对路径和绝对路径相对路径相对路径是对于当前路径来说的，以当前路径为参照查找的路径，有的时候直接写绝对路径，路径比较深，要写的路径也比较长 绝对路径（无论在哪个页面，无论如何都会找到文件）绝对路径是从根目录开始查找，跟当前文件没有关系  httphttp是什么HyperText Transfer Protocol ,超文本传输协议">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-博学谷第四天" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/20/博学谷第四天/" class="article-date">
+  <time datetime="2017-07-20T13:15:06.000Z" itemprop="datePublished">2017-07-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      博学谷第四天
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="复习"><a href="#复习" class="headerlink" title="复习"></a>复习</h1><h2 id="index-php的作用介绍"><a href="#index-php的作用介绍" class="headerlink" title="index.php的作用介绍"></a>index.php的作用介绍</h2><ol>
+<li>简化url</li>
+<li>实现公共部分的复用</li>
+</ol>
+<h2 id="相对路径和绝对路径"><a href="#相对路径和绝对路径" class="headerlink" title="相对路径和绝对路径"></a>相对路径和绝对路径</h2><h3 id="相对路径"><a href="#相对路径" class="headerlink" title="相对路径"></a>相对路径</h3><p>相对路径是对于当前路径来说的，以当前路径为参照查找的路径，有的时候直接写绝对路径，路径比较深，要写的路径也比较长</p>
+<h3 id="绝对路径（无论在哪个页面，无论如何都会找到文件）"><a href="#绝对路径（无论在哪个页面，无论如何都会找到文件）" class="headerlink" title="绝对路径（无论在哪个页面，无论如何都会找到文件）"></a>绝对路径（无论在哪个页面，无论如何都会找到文件）</h3><p>绝对路径是从根目录开始查找，跟当前文件没有关系</p>
+<hr>
+<h1 id="http"><a href="#http" class="headerlink" title="http"></a>http</h1><h2 id="http是什么"><a href="#http是什么" class="headerlink" title="http是什么"></a>http是什么</h2><p>HyperText Transfer Protocol ,超文本传输协议</p>
+<h2 id="http协议的作用"><a href="#http协议的作用" class="headerlink" title="http协议的作用"></a>http协议的作用</h2><p>http协议主要用作浏览器和服务器之间的数据传输</p>
+<h2 id="http协议是无状态的"><a href="#http协议是无状态的" class="headerlink" title="http协议是无状态的"></a>http协议是无状态的</h2><p>服务器并不会记住浏览器的状态，每次请求都会认为是新的浏览器在访问服务器</p>
+<h2 id="无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）"><a href="#无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）" class="headerlink" title="无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）"></a>无状态的问题需要解决，否则很多效果没法实现（如：登录的效果）</h2><p>cookie<br>session</p>
+<h3 id="如何通过cookie和session实现http会话"><a href="#如何通过cookie和session实现http会话" class="headerlink" title="如何通过cookie和session实现http会话"></a>如何通过cookie和session实现http会话</h3><p>服务器端可以在session中存储浏览器的状态信息，这个session中存储的数据会具备一个session id，在服务器在响应请求的时候，将这个session id直接写入到浏览器端的cookie中，由于cookie在每次请求的时候，都会被自动的被请求携带到服务器端，所以每次请求这个session id 都会被拿到服务器端，那么服务器就可以通过浏览器发送过来的session id 来找，浏览器上一次的状态。</p>
+<h1 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>浏览器端的一个存储空间。</p>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>cookie的存储是以域名为单位的，各个域名之间不能互相访问cookie。</li>
+<li>每个域名能够在cooki中存储的内容是有大小限制的，4kb<br>1kb=1024b ,一个汉字占2b一个英文字母占1b</li>
+<li>cookie中存储的数据是有时限的。（默认浏览器关闭，cookie消失）</li>
+<li>cookie在每个域名下是分路径存储的，在父级路径中是不能访问到存储在子级路径中的cookie，但是，子级路径可以访问到存储在父级路径中的cookie，所以一般情况下，都将所有cookie存储在根目录下，以便所有的路径都可以访问<br>例如<br>在<a href="http://studyit.com/danshboard/index" target="_blank" rel="external">http://studyit.com/danshboard/index</a> 页面中存储了一个cookie，那么在<a href="http://studyit.com" target="_blank" rel="external">http://studyit.com</a> 这个页面就访问不到cookie了</li>
+<li>cookie存储的信息，会在每次请求的时候，会被携带者发送到服务器</li>
+</ol>
+<h2 id="在浏览器端通过js代码来操作cookie"><a href="#在浏览器端通过js代码来操作cookie" class="headerlink" title="在浏览器端通过js代码来操作cookie"></a>在浏览器端通过js代码来操作cookie</h2><h3 id="从cookie中获取内容"><a href="#从cookie中获取内容" class="headerlink" title="从cookie中获取内容"></a>从cookie中获取内容</h3><p> 可以通过“document.cookie” 属性来访问cookie中的内容，cookie的本质其实是一串字符串，以“；”隔开，键值对“key=value”。</p>
+<h3 id="往cookie中存储内容"><a href="#往cookie中存储内容" class="headerlink" title="往cookie中存储内容"></a>往cookie中存储内容</h3><p> 直接给“document.cookie”使用“=”赋值即可将内容存储到cookie</p>
+<pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">    <span class="built_in">document</span>.cookie=<span class="string">"name=张三"</span>;</div><div class="line">    <span class="built_in">document</span>.cookie=<span class="string">"age=18"</span>;    <span class="comment">//不会覆盖，会追加在“name=张三”之后，且用“；”分隔 </span></div><div class="line"><span class="comment">//Object.defineProperty</span></div><div class="line"><span class="comment">//过期时间的设置</span></div><div class="line"><span class="keyword">var</span> time=<span class="keyword">new</span> <span class="built_in">Date</span>(<span class="string">"2017-07-20 10:30:00"</span>);</div><div class="line"><span class="built_in">document</span>.cookie=<span class="string">"name=张三;expires="</span>+time.toGMTString();</div><div class="line"><span class="comment">//toGMTString()方法可根据格林威治</span></div><div class="line">    <span class="keyword">var</span> cookie=<span class="built_in">document</span>.cookie;</div><div class="line">    <span class="built_in">console</span>.log(ciikie);</div></pre></td></tr></table></figure>
+</code></pre><h3 id="cookie存储的路径的更改"><a href="#cookie存储的路径的更改" class="headerlink" title="cookie存储的路径的更改"></a>cookie存储的路径的更改</h3><pre><code><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.cookie=<span class="string">"gender=mele;path=/"</span>;</div><div class="line"><span class="keyword">var</span> cookie=<span class="built_in">document</span>.cookie;</div><div class="line"><span class="built_in">console</span>.log(cookie);</div><div class="line"><span class="comment">//放在根目录下，可以修改路径。cookie分路径保存</span></div></pre></td></tr></table></figure>
+</code></pre><h2 id="自己分装一个操作cookie的方法"><a href="#自己分装一个操作cookie的方法" class="headerlink" title="自己分装一个操作cookie的方法"></a>自己分装一个操作cookie的方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//用户可以传进来要存储的键值对，过期时间，存储路径</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setCookie</span>(<span class="params">key,value,option</span>)</span>&#123;</div><div class="line">    <span class="built_in">document</span>.cookie=key+<span class="string">"="</span>+value+<span class="string">";ecpires="</span>+option.toGMTString()<span class="string">"</span></div><div class="line"><span class="string">&#125;</span></div><div class="line"><span class="string">function getCookie(key)&#123;</span></div><div class="line"><span class="string">    //将cookie的内容以“;”进行分割；</span></div><div class="line"><span class="string">    //分割之后拿到的是包含“key=value”的键值对的数组</span></div><div class="line"><span class="string">    var cookoies=document.cookie.split("</span>;<span class="string">");</span></div><div class="line"><span class="string">    for（var i=0;i&lt;cookies.length;i++）&#123;</span></div><div class="line"><span class="string">        var cookie=cookies[i];</span></div><div class="line"><span class="string">        var keyValuePair=cookie.split("</span>=<span class="string">");</span></div><div class="line"><span class="string">        obj[keyValuePair[0].trim()]=keyValuePair[1];</span></div><div class="line"><span class="string">    &#125;</span></div><div class="line"><span class="string">    return obj;</span></div><div class="line"><span class="string">&#125;</span></div></pre></td></tr></table></figure>
+<h2 id="jQuery中操作cookie的方法"><a href="#jQuery中操作cookie的方法" class="headerlink" title="jQuery中操作cookie的方法"></a>jQuery中操作cookie的方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">$.cookie=(<span class="string">"许嵩"</span>,<span class="string">"男神"</span>,&#123;</div><div class="line">    expires:<span class="number">10</span>;</div><div class="line">    path:<span class="string">"/"</span></div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log($.cookie(<span class="string">"name"</span>));</div><div class="line">$.remove.cookie(<span class="string">"许嵩"</span>);</div></pre></td></tr></table></figure>
+<h2 id="服务器端操作cookie"><a href="#服务器端操作cookie" class="headerlink" title="服务器端操作cookie"></a>服务器端操作cookie</h2><h1 id="sesstion"><a href="#sesstion" class="headerlink" title="sesstion"></a>sesstion</h1><h2 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h2><p> 是服务器端的一个存储空间</p>
+<h2 id="特点-1"><a href="#特点-1" class="headerlink" title="特点"></a>特点</h2><ol>
+<li>session也是有过期时间的，根据后端使用的技术不同，session的过期时间也不一样，session的过期时间是滑动的</li>
+<li>session只能在服务器端操作，浏览器端是不能操作到session的</li>
+</ol>
+<h2 id="session的操作"><a href="#session的操作" class="headerlink" title="session的操作"></a>session的操作</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">header(<span class="string">"Content-type:text/html;charset=utf-8"</span>);</div><div class="line"></div><div class="line"><span class="comment">//开启session</span></div><div class="line">session_atart(); <span class="comment">//必须的</span></div><div class="line"></div><div class="line"><span class="comment">//存</span></div><div class="line">$_SESSION[<span class="string">"name"</span>]=<span class="string">"张三"</span>;</div><div class="line"></div><div class="line"><span class="comment">//取</span></div><div class="line"><span class="keyword">echo</span> $_SESSION[<span class="string">"name"</span>];</div></pre></td></tr></table></figure>
+<h1 id="Object-defineProperty"><a href="#Object-defineProperty" class="headerlink" title="Object.defineProperty"></a>Object.defineProperty</h1><h3 id="添加属性除了点语法、-语法，除了字面量方式，还有-Object-defineProperty"><a href="#添加属性除了点语法、-语法，除了字面量方式，还有-Object-defineProperty" class="headerlink" title="添加属性除了点语法、[]语法，除了字面量方式，还有 Object.defineProperty();"></a>添加属性除了点语法、[]语法，除了字面量方式，还有 Object.defineProperty();</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"> <span class="comment">//第一个参数：要给哪个对象添加属性</span></div><div class="line"> <span class="comment">//第二个参数：要添加的属性的名称</span></div><div class="line"> <span class="comment">//第三个参数：是一个对象，这个对象里面包含要填的属性的一些设置内容</span></div><div class="line"> <span class="comment">//wtitable:设置属性是否可以被赋值，默认false</span></div><div class="line"> <span class="comment">//enumerble:设置属性是i否可以被 for-in 遍历到，默认false</span></div><div class="line"> <span class="comment">//configirable:设置实行是否可以被删除，默认false</span></div><div class="line"> <span class="comment">//value:设置属性默认值</span></div><div class="line"> <span class="comment">//set:是一个函数,会在属性被使用“=”赋值的时候自动调用</span></div><div class="line">     <span class="comment">//用户所赋值的内容会被当作参数传入set方法中</span></div><div class="line"> <span class="comment">//get:是一个函数，会在属性被获取的时候自动调用</span></div><div class="line"> <span class="comment">//set和get不能跟wtitable、value同时出现</span></div><div class="line"><span class="keyword">var</span> _yanzhi;</div><div class="line"> <span class="built_in">Object</span>.defineProperty(xs,<span class="string">"颜值"</span>,&#123;</div><div class="line">     enumerble：<span class="literal">true</span>;</div><div class="line">     set:<span class="function"><span class="keyword">function</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">         <span class="keyword">this</span>._yanzhi=value;</div><div class="line">         <span class="built_in">console</span>.log(<span class="string">"set方法被调用了"</span>);</div><div class="line">     &#125;</div><div class="line">     get:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">         <span class="keyword">return</span> <span class="keyword">this</span>._yanzhi;</div><div class="line">         <span class="built_in">console</span>.log(<span class="string">"get方法被调用了"</span>);</div><div class="line">     &#125;</div><div class="line">     </div><div class="line"> &#125;);</div><div class="line"> xs[<span class="string">"颜值"</span>]=<span class="number">123</span>;<span class="comment">//赋值</span></div><div class="line"> xs[<span class="string">"颜值"</span>];<span class="comment">//调用</span></div><div class="line"> <span class="built_in">console</span>.log（xs）;</div></pre></td></tr></table></figure>
+<p>doc.butue.com  博学谷接口文档地址</p>
+<h1 id="接口说明"><a href="#接口说明" class="headerlink" title="接口说明"></a>接口说明</h1><h2 id="地址"><a href="#地址" class="headerlink" title="地址"></a>地址</h2><p>文档:<a href="http://doc.botue.com" target="_blank" rel="external">http://doc.botue.com</a><br>demo:<a href="http://bxg.botue.com" target="_blank" rel="external">http://bxg.botue.com</a><br>接口地址:<a href="http://api.botue.com/v3" target="_blank" rel="external">http://api.botue.com/v3</a></p>
+<h2 id="我们写的静态网站地址"><a href="#我们写的静态网站地址" class="headerlink" title="我们写的静态网站地址"></a>我们写的静态网站地址</h2><p><a href="http://studyit.com" target="_blank" rel="external">http://studyit.com</a></p>
+<p>要从自己写的静态网页向接口服务器发送数据请求</p>
+<h2 id="跨域：当前所在的网页的域名，和要请求的数据的域名，不一样"><a href="#跨域：当前所在的网页的域名，和要请求的数据的域名，不一样" class="headerlink" title="跨域：当前所在的网页的域名，和要请求的数据的域名，不一样"></a>跨域：当前所在的网页的域名，和要请求的数据的域名，不一样</h2><p>由于浏览器的同源策略，域名中（协议、域名、端口）有任意一部分不一致，就会产生跨域请求。浏览器会直接将跨域请求阻止。</p>
+<ol>
+<li>协议</li>
+<li>域名</li>
+<li>端口</li>
+</ol>
+<h2 id="跨域的解决方案"><a href="#跨域的解决方案" class="headerlink" title="跨域的解决方案"></a>跨域的解决方案</h2><ol>
+<li>jsonp（最常用）<br>原理：通过动态创建script标签，将script标签的src属性设置为要请求的接口地址，这样将script加到页面上的时候，会自动向接口发送请求了。服务器端返回的数据会直接被当作js代码执行。</li>
+</ol>
+<p>服务器端返回的数据，有格式的要求，必须是一个函数调用的形式<br>    函数名(数据)<br>这个函数可以在请求之前就在全局之前创建号，那么请求完成之后，会自动调用这个函数，就类似于请求成功的回调函数了。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">url,callback</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> script=<span class="built_in">document</span>,createElement(<span class="string">"script"</span>);</div><div class="line">    <span class="comment">//j将存在全局的函数名称作为参数传递给了后台</span></div><div class="line">    <span class="comment">//后台在接收到这个参数之后，会将返回的数据设置成 success(&#123;&#125;)</span></div><div class="line">    script.src=url;</div><div class="line">    <span class="built_in">document</span>,body.appendCild(script);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
+<li><p>后台在相应头中添加一个 Access-Control-Allow-Origin:*</p>
+</li>
+<li><p>反向代理<br>会增加服务器的压力<br> 步骤：<br> ① 打开 http.conf（apache之下）</p>
+<pre><code>找到如下内容
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#LoadModule proxy_module modules/mod_proxy.so</div><div class="line">#LoadModule proxy_http_module modules/mod_proxy_http.so</div></pre></td></tr></table></figure>
+
+去掉前面的的 #
+</code></pre><p> ②打开extra/httpd-vhosts.conf</p>
+<pre><code>找到博学谷网站的virtual-hosts节点，在里面添加
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ProxyRequests off</div><div class="line">ProxyPass /api http://api.botue.com/v3</div></pre></td></tr></table></figure>
+
+ProxyPass 本余名的路径 远程接口的域名
+用本域名的一个指定的路径，，来代表远程的接口的域名
+可以直接访问本域名的这个路径，就相当于是向接口发送了请求
+</code></pre></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/07/20/博学谷第四天/" data-id="cj6f1jbs00007hsogt9nsq3gp" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/21/博学谷第五天/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          博学谷第五天
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/18/博学谷第三天/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">博学谷第三天</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/07/26/博学谷第八天/">博学谷第八天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/25/博学谷部分知识总结/">博学谷部分知识总结</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/24/博学谷第七天/">博学谷第七天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/23/博学谷第六天/">博学谷第六天</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/22/面向对象复习/">面向对象复习</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
